@@ -42,7 +42,6 @@
 			border:1px solid yellow;
 			background-image: url('/static/background.jpg');
 			background-size: cover;
-			/*display: block;*/
 			border-radius: 225px;
 			-webkit-border-radius: 225px;
 			-moz-border-radius: 225px;
@@ -78,6 +77,17 @@
 			line-height:3rem;
 			border:1px solid green;
 		}
+
+		#outer_wrapper {
+			border:1px solid red;
+			height:240px; width:240px;
+		}
+
+		#inner_div{
+			border:1px solid blue;
+			height:140px; width:140px;
+			margin: 0 auto;
+		}
 	</style>
 	
 	<body>
@@ -95,6 +105,10 @@
 					ABOUT
 				</div>
 
+				<div id="outer_wrapper">
+					<div id="inner_div"></div>
+				</div>
+
 				<div id="profile_border" >
 					<div id ="profile_div">
 						<img class="img-circular" src="/static/profile.png" style="border-radius:50%">
@@ -102,10 +116,12 @@
 				</div>
 
 				<div id="about_div">
+					<div >
 
-					Hi! I’m a third-year graduate student working with Avniel Ghuman in the Laboratory of Cognitive Neurodynamics at the University of Pittsburgh. I’m broadly interested in understanding how visual perception unfolds dynamically in the brain, and am currently interested in the distributed mechanisms that support our perception of faces, objects, and numbers. Outside of lab, I spend a lot of time cooking and reading cookbooks, doing yoga, taking care of my plants, and having a really good time in Pittsburgh.  
-					<br><br>
-					I previously worked with Chris Baker in the Section on Learning and Plasticity at the National Institute of Mental Health, and with Susan Baillet as an undergraduate at the University of Portland.
+						Hi! I’m a third-year graduate student working with Avniel Ghuman in the Laboratory of Cognitive Neurodynamics at the University of Pittsburgh. I’m broadly interested in understanding how visual perception unfolds dynamically in the brain, and am currently interested in the distributed mechanisms that support our perception of faces, objects, and numbers. Outside of lab, I spend a lot of time cooking and reading cookbooks, doing yoga, taking care of my plants, and having a really good time in Pittsburgh.  
+						<br><br>
+						I previously worked with Chris Baker in the Section on Learning and Plasticity at the National Institute of Mental Health, and with Susan Baillet as an undergraduate at the University of Portland.
+					</div>
 				</div>
 			</div>
 		</div>
