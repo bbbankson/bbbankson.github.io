@@ -17,12 +17,9 @@
 		#container {
 			position:absolute;
 			z-index:0;
-			height:40%;
-			width:60%;
 			overflow:auto;
 			border:1px solid red;
 			left:20%;
-			padding:25px;
 			font-family: 'Nanum Gothic', sans-serif;
 		}
 
@@ -30,12 +27,16 @@
 			position:relative;
 			z-index: 1;
 			top:75px;
+			padding:25px;
+			height:40%;
+			width:60%;
 			background-color:#FADDD1;
 			border:10px solid white;
 		}
 
 		#profile_div{
-			position:absolute;
+			position:relative;
+			z-index:2;
 			right:0px;
 			width:150px; height:150px;
 		}
@@ -49,6 +50,15 @@
 			-webkit-border-radius: 100px;
 			-moz-border-radius: 100px;
 		}
+
+		#title_div{
+			font-family: 'Playfair Display Black', serif;
+			font-size: 3rem;
+			text-transform: uppercase;
+			cursor: default !important;
+			padding-bottom:25px;
+			letter-spacing: 0.15em;
+		}
 	</style>
 	
 	<body>
@@ -60,6 +70,11 @@
 		</div>
 
 		<div id="container">
+
+			<div id="title_div">
+				ABOUT
+			</div>
+
 			<div id ="profile_div">
 				<img class="img-circular" src="/static/profile.png" style="border-radius:50%">
 			</div>
