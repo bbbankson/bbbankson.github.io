@@ -2,12 +2,12 @@
 
 body{
     background-color: #DBE5DF;
+    font-family: 'Nanum Gothic' sans-serif;
 }
 
 html, body{
 	height:100vh;
 	width:100%;
-	font-family: 'Nanum Gothic' sans-serif;
 }
 
 .nav {
@@ -31,14 +31,4 @@ a:hover {
 	padding-bottom: 10px;
 	color: #DD6B20;
 	border-bottom: 2px solid #DD6B20;
-}
-
-.img-circular{
-	width: 100px;
-	height: 100px;
-	background-size: cover;
-	display: block;
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
 }
