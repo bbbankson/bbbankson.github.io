@@ -36,36 +36,6 @@
 			line-height:2rem;
 		}
 
-		#profile_border{
-			float:right;
-			width:225px; height:225px;
-			border:1px solid yellow;
-			background-image: url('/static/background.jpg');
-			background-size: cover;
-			border-radius: 225px;
-			-webkit-border-radius: 225px;
-			-moz-border-radius: 225px;
-		}
-
-		#profile_div{
-			display: inline-block; 
-      		margin: 0 auto;
-			border:1px solid blue;
-			width:200px; height:200px;
-			vertical-align: middle;
-		}
-
-		.img-circular{
-			width: 200px;
-			height: 200px;
-			background-size: cover;
-			display: block;
-			border-radius: 200px;
-			-webkit-border-radius: 200px;
-			-moz-border-radius: 200px;
-			margin:auto;
-		}
-
 		#title_div{
 			font-family: 'Playfair Display Black', serif;
 			font-size: 3rem;
@@ -78,22 +48,22 @@
 			border:1px solid green;
 		}
 
-		#outer_wrapper {
-			height:200px; width:200px;
+		#wrapper-pic {
+			height:300px; width:300px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			border-radius: 200px;
-			-moz-border-radius: 200px;
-			-webkit-border-radius: 200px;
-			background-color:yellow;
+			border-radius: 300px;
+			-moz-border-radius: 300px;
+			-webkit-border-radius: 300px;
+			background-color:black;
 		}
 
-		#inner_div{
-			height:150px; width:150px;
-			border-radius: 150px;
-			-moz-border-radius: 150px;
-			-webkit-border-radius: 150px;
+		#inner-pic{
+			height:250px; width:250px;
+			border-radius: 250px;
+			-moz-border-radius: 250px;
+			-webkit-border-radius: 250px;
 			background-image: url('/static/profile.png');
 			background-size: cover;
 		}
@@ -114,14 +84,8 @@
 					ABOUT
 				</div>
 
-				<div id="outer_wrapper">
-					<div id="inner_div">Hello</div>
-				</div>
-
-				<div id="profile_border" >
-					<div id ="profile_div">
-						<img class="img-circular" src="/static/profile.png" style="border-radius:50%">
-					</div>
+				<div id="wrapper-pic">
+					<div id="inner-pic"></div>
 				</div>
 
 				<div id="about_div">
