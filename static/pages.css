@@ -2,6 +2,7 @@
 
 body{
     background-color: #DBE5DF;
+    /*FB7759*/
 }
 
 html, body{
@@ -51,4 +52,17 @@ a:hover {
 	padding-bottom: 10px;
 	color: #DD6B20;
 	border-bottom: 2px solid #DD6B20;
+}
+
+.about_circle {
+	display: block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 2em;
 }
