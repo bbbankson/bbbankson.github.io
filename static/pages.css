@@ -10,9 +10,20 @@ html, body{
 	width:100%;
 }
 
+.nav {
+	display:fixed;
+	border-bottom:1px solid red;
+	height:10vh;
+	width:100%;
+	font-size:2rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+}
+
 .container {
 	position:absolute;
-	height:100vh;
+	height:80vh;
 	width:100%;
 	vertical-align: middle !important;
 	align-items:center !important;
