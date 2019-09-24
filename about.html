@@ -15,16 +15,8 @@
 	<style>
 
 		#container{
-			width:100%;
-			position:relative;
-		}
-
-		#element {
-			position:absolute;
+			width:800px;
 			border:1px solid red;
-			left:15%;
-			width:600px;
-			font-family: 'Nanum Gothic', sans-serif;
 		}
 
 		#about_div {
@@ -34,21 +26,11 @@
 			background-color:#FADDD1;
 			border:10px solid white;
 			line-height:2rem;
-		}
-
-		#title_div{
-			font-family: 'Playfair Display Black', serif;
-			font-size: 3rem;
-			text-transform: uppercase;
-			cursor: default !important;
-			padding-bottom:25px;
-			letter-spacing: 0.15em;
-			width:100%;
-			line-height:3rem;
-			border:1px solid green;
+			font-family: 'Nanum Gothic', sans-serif;
 		}
 
 		#wrapper-pic {
+			border:1px solid blue;
 			height:300px; width:300px;
 			display: flex;
 			justify-content: center;
@@ -57,6 +39,7 @@
 			-moz-border-radius: 300px;
 			-webkit-border-radius: 300px;
 			background-color:black;
+			float:right;
 		}
 
 		#inner-pic{
@@ -66,6 +49,7 @@
 			-webkit-border-radius: 250px;
 			background-image: url('/static/profile.png');
 			background-size: cover;
+			top:30px;
 		}
 	</style>
 	
@@ -78,24 +62,14 @@
 		</div>
 
 		<div id="container">
-			<div id="element">
+			<div id="wrapper-pic">
+				<div id="inner-pic"></div>
+			</div>
 
-				<div id="title_div">
-					ABOUT
-				</div>
-
-				<div id="wrapper-pic">
-					<div id="inner-pic"></div>
-				</div>
-
-				<div id="about_div">
-					<div >
-
-						Hi! I’m a third-year graduate student working with Avniel Ghuman in the Laboratory of Cognitive Neurodynamics at the University of Pittsburgh. I’m broadly interested in understanding how visual perception unfolds dynamically in the brain, and am currently interested in the distributed mechanisms that support our perception of faces, objects, and numbers. Outside of lab, I spend a lot of time cooking and reading cookbooks, doing yoga, taking care of my plants, and having a really good time in Pittsburgh.  
-						<br><br>
-						I previously worked with Chris Baker in the Section on Learning and Plasticity at the National Institute of Mental Health, and with Susan Baillet as an undergraduate at the University of Portland.
-					</div>
-				</div>
+			<div id="about_div">
+				Hi! I’m a third-year graduate student working with Avniel Ghuman in the Laboratory of Cognitive Neurodynamics at the University of Pittsburgh. I’m broadly interested in understanding how visual perception unfolds dynamically in the brain, and am currently interested in the distributed mechanisms that support our perception of faces, objects, and numbers. Outside of lab, I spend a lot of time cooking and reading cookbooks, doing yoga, taking care of my plants, and having a really good time in Pittsburgh.  
+				<br><br>
+				I previously worked with Chris Baker in the Section on Learning and Plasticity at the National Institute of Mental Health, and with Susan Baillet as an undergraduate at the University of Portland.
 			</div>
 		</div>
 
