@@ -15,8 +15,18 @@
   			background-attachment: fixed;
 		}
 
+		html, body{
+			height:100vh;
+		}
+
+		.container {
+			display:flex;
+			align-items:center;
+			justify-content:center;
+		}
+
 		.title{
-			font-family: 'Playfair Display Bold', serif;
+			font-family: 'Playfair Display Black', serif;
 			font-size: 6rem;
 			text-transform: uppercase;
 			cursor: pointer;
@@ -40,16 +50,14 @@
 	</style>
 	
 	<body>
-		<div style="height:100vh;vertical-align: middle;text-align:center;">
-			<div style="margin:auto">
-				<div class="title_div">
-					<span class="title">Brett Bankson</span>
-				</div>
-				<div class="main_links" style="padding-top:25px">
-					<a href="#">About</a>
-					<a href="#">Research</a>
-					<a href="#">Food</a>
-				</div>
+		<div class="container">
+			<div class="title_div">
+				<span class="title">Brett Bankson</span>
+			</div>
+			<div class="main_links" style="padding-top:25px">
+				<a href="#">About</a>
+				<a href="#">Research</a>
+				<a href="#">Food</a>
 			</div>
 		</div>
 	</body>
