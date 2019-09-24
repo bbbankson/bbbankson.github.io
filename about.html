@@ -10,11 +10,6 @@
 
 	<style>
 
-		#container{
-			width:800px;
-			border:1px solid red;
-		}
-
 		#about_div {
 			overflow:auto;
 			width:700px;
@@ -22,6 +17,12 @@
 			border:1px solid red;
 			line-height:2rem;
 			font-family: 'Nanum Gothic', sans-serif;
+			position:relative;
+		}
+
+		#title_div{
+			position:absolute;
+			line-height:30px;
 		}
 
 		#about_text{
@@ -41,7 +42,6 @@
 			-moz-border-radius: 300px;
 			-webkit-border-radius: 300px;
 			float:right;
-			/*background-color:green;*/
 			background-image: url('/static/profile-border.png');
 			background-size: cover;
 		}
@@ -68,6 +68,10 @@
 
 		<div id="about_div">
 
+			<div id="title_div">
+				About Brett
+			</div>
+			
 			<div id="wrapper-pic">
 				<div id="inner-pic"></div>
 			</div>
