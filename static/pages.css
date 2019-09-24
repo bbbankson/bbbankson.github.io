@@ -11,13 +11,14 @@ html, body{
 
 .nav {
 	display:fixed;
-	border-bottom:1px solid red;
-	height:10vh;
+	padding:20px;
+	align-content: center;
+	line-height:60px;
 	width:100%;
 }
 
 .nav a{
-	font-size:2rem;
+	font-size:1rem;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
@@ -42,8 +43,8 @@ a:hover {
 }
 
 .img-circular{
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	background-size: cover;
 	display: block;
 	border-radius: 100px;
