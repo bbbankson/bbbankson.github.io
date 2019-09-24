@@ -9,7 +9,7 @@
 	</head>
 
 	<script>
-		console.log('try 9')
+		console.log('try 10')
 	</script>
 
 	<style>
@@ -29,8 +29,18 @@
 			border:10px solid white;
 		}
 
-		#profile_div{
+		#profile_border{
 			float:right;
+			width:225px; height:225px;
+			background-image: url('/static/background.jpg');
+			background-size: cover;
+			display: block;
+			border-radius: 225px;
+			-webkit-border-radius: 225px;
+			-moz-border-radius: 225px;
+		}
+
+		#profile_div{
 			border:1px solid blue;
 			width:200px; height:200px;
 		}
@@ -72,8 +82,10 @@
 				ABOUT
 			</div>
 
-			<div id ="profile_div">
-				<img class="img-circular" src="/static/profile.png" style="border-radius:50%">
+			<div id="profile_border">
+				<div id ="profile_div">
+					<img class="img-circular" src="/static/profile.png" style="border-radius:50%">
+				</div>
 			</div>
 
 			<div id="about_div">
