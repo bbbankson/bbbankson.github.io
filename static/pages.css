@@ -2,7 +2,7 @@
 
 body{
     background-color: #DBE5DF;
-    color: #2D3748;
+    color: #2D3748 !important;
 }
 
 html, body{
@@ -16,6 +16,7 @@ html, body{
 	align-content: center;
 	line-height:60px;
 	width:100%;
+	color:#2D3748;
 }
 
 .nav a{
