@@ -28,9 +28,9 @@ a {
 }
 
 a:hover {
-	color: #DD6B20;
-	padding-bottom:10px;
-	border-bottom: 2px solid #DD6B20;
+	color: #DD6B20 !important;
+	padding-bottom:10px !important;
+	border-bottom: 2px solid #DD6B20 !important;
 }
 
 .nav a{
