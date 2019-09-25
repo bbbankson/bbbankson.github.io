@@ -21,21 +21,19 @@ html, body{
 	color:#2D3748;
 }
 
-.nav a{
-	font-size:1rem;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
+a {
 	color: #2D3748;
 	text-decoration: none;
 }
 
 a:hover {
-	padding-bottom: 10px;
 	color: #DD6B20;
 	border-bottom: 2px solid #DD6B20;
 }
 
-.title {
-	font-size:50px;
+.nav a{
+	font-size:1rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
 }
