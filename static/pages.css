@@ -41,6 +41,7 @@ a:hover {
 @media screen and (max-width: 480px) {
 	.nav{
 		text-align:center;
+		align-content: center;
 	}
 
 	.nav a{
