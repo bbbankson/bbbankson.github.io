@@ -1,10 +1,10 @@
 
 
+
 body{
     background-color: #DBE5DF;
     color: #2D3748 !important;
     line-height:2rem;
-	font-family: 'Nanum Gothic', sans-serif;
 }
 
 html, body{
@@ -37,6 +37,5 @@ a:hover {
 }
 
 .title {
-	font-family: 'Comfortaa', cursive;
 	font-size:50px;
 }
