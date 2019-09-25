@@ -15,11 +15,15 @@
 
 		function switchTab() {
 		    // Switches the tab from Interests to Papers and vice versa
-		    var divs = document.getElementsByClassName("research_div"); // Hide currently open divs
-		    divs.style.display = 'none';           // Hide
-		    var open_tab = this.href;
-		    open_tab.style.display = 'block';           // Hide
-		    console.log(open_tab)
+		    var interests = document.getElementById("interests");
+		    var papers = document.getElementById("papers");
+		    if (interests.style.display === "none") {
+				interests.style.display = "block";
+				papers.style.display = "none";
+			} else {
+				interests.style.display = "none";
+				papers.style.display = "block";
+			}
 		}
 		
 	</script>
