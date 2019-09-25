@@ -22,8 +22,8 @@ html, body{
 }
 
 a {
-	color: #2D3748;
-	text-decoration: none;
+	color: #2D3748 !important;
+	text-decoration: none !important;
 }
 
 a:hover {
