@@ -3,6 +3,8 @@
 body{
     background-color: #DBE5DF;
     color: #2D3748 !important;
+    line-height:2rem;
+	font-family: 'Nanum Gothic', sans-serif;
 }
 
 html, body{
@@ -32,4 +34,9 @@ a:hover {
 	padding-bottom: 10px;
 	color: #DD6B20;
 	border-bottom: 2px solid #DD6B20;
+}
+
+.title {
+	font-family: 'Comfortaa', cursive;
+	font-size:50px;
 }
