@@ -24,16 +24,17 @@ html, body{
 a {
 	color: #2D3748 !important;
 	text-decoration: none !important;
+	text-transform: uppercase;
 }
 
 a:hover {
 	color: #DD6B20;
+	padding-bottom:10px;
 	border-bottom: 2px solid #DD6B20;
 }
 
 .nav a{
 	font-size:1rem;
 	letter-spacing: 0.08em;
-	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
 }
