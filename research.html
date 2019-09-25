@@ -16,7 +16,7 @@
 			font-family: 'Nanum Gothic', sans-serif;
 			background-color: white;
 			padding:25px;
-			width:100vw;
+			max-width:90%;
 		}
 
 		#title_div{
@@ -26,6 +26,23 @@
 			line-height:50px;
 			font-size:50px;
 			margin-bottom:20px;
+		}
+
+		.card {
+			display:table;
+			border:1px solid blue;
+		}
+
+		.description{
+			display:table-cell;
+			width:50%;
+			border:1px solid green;
+		}
+
+		.question{
+			display:table-cell;
+			width:50%;
+			border:1px solid blue;
 		}
 
 	</style>
@@ -46,12 +63,17 @@
 			<span style="color: #234E52; font-size:2rem;">The human brain rapidly and effortlessly extracts visual information from our environments on a millisecond-to-millisecond basis.</span>
 
 			<p>
-				How does coordinated activity throughout visually responsive areas of the brain compute this input to yield high-level information that informs mental states and behavior? There are several research avenues I’m working on to further our understanding of this process, using spatiotemporally-resolved recordings from intracranial electroencephalography (iEEG) to provide sensitive and dynamic portraits of brain activity.
+				How does coordinated activity throughout visually responsive areas of the brain compute this input to yield <b>high-level information</b> that informs mental states and behavior? There are several research avenues I’m working on to further our understanding of this process, using spatiotemporally-resolved recordings from <i>intracranial electroencephalography (iEEG)</i> to provide sensitive and dynamic portraits of brain activity.
 			</p>
 		</div>
 
-		<div>
-			Spatiotemporal dynamics of face perception and natural vision: When we see a face, we encode information from many feature dimensions – identity, age, gender, expression, gaze direction, etc. These features are functionally relevant and shape our interpretation of people in front of us. I’m working to answer the following questions: How are different face feature dimensions that form and motion-related aspects encoded in time across ventral and dorsal visual streams? Do non-face preferring areas represent face information that is independent from canonical face preferring areas, and does this extend to other categories of visual objects? How does the brain extract identity and affective information from dynamic videos of spontaneous facial expressions?
+		<div class="card">
+			<div class="description">
+				Spatiotemporal dynamics of face perception and natural vision: When we see a face, we encode information from many feature dimensions – identity, age, gender, expression, gaze direction, etc. These features are functionally relevant and shape our interpretation of people in front of us. 
+			</div>
+			<div class="questions">
+				I’m working to answer the following questions: How are different face feature dimensions that form and motion-related aspects encoded in time across ventral and dorsal visual streams? Do non-face preferring areas represent face information that is independent from canonical face preferring areas, and does this extend to other categories of visual objects? How does the brain extract identity and affective information from dynamic videos of spontaneous facial expressions?
+			</div>
 		</div>
 
 		<div>
