@@ -16,10 +16,10 @@
 		function switchTab() {
 		    // Switches the tab from Interests to Papers and vice versa
 		    var divs = document.getElementsByClassName("research_div"); // Hide currently open divs
-		    divs.hide();
+		    divs.style.display = 'none';           // Hide
 		    var open_tab = this.href;
+		    open_tab.style.display = 'block';           // Hide
 		    console.log(open_tab)
-		    document.getElementById(open_tab).show();
 		}
 		
 	</script>
@@ -258,105 +258,20 @@
 
 			<div id="papers" class="research_div" style="display:none">
 
-				<div id="research_summary" class="white_background">
-					<span class="sub_header">RESEARCH PAPERS</span>
-
-					<p>
-						How does coordinated activity throughout visually responsive areas of the brain <span class="emphasis-span">compute this input to yield high-level information</span> that informs mental states and behavior? There are several research avenues I’m working on to further our understanding of this process, using spatiotemporally-resolved recordings from <i>intracranial electroencephalography (iEEG)</i> to provide sensitive and dynamic portraits of brain activity.
-					</p>
-
-				</div>
-
-				<div class="card">
-					<div class="description">
-						<span class="description-header">
-							Spatiotemporal dynamics of face perception and natural vision
-						</span>
-						<br>
-						When we see a face, we encode information from many feature dimensions – identity, age, gender, expression, gaze direction, etc. These features are functionally relevant and shape our interpretation of people in front of us. 
-					</div>
-					<div class="question">
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px;">
-								How are different face feature dimensions that form and motion-related aspects encoded in time across ventral and dorsal visual streams?
-							</div>
-						</div>
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px">
-								Do non-face preferring areas represent face information that is independent from canonical face preferring areas, and does this extend to other categories of visual objects?
-							</div>
-						</div>
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px">
-								How does the brain extract identity and affective information from dynamic videos of spontaneous facial expressions?
-							</div>
-						</div>
-					</div>
-				</div>
-
 				<div class="card white_background">
-					<div class="description">
-						<span class="description-header">
-							Retinotopy and visual perception
-						</span>
-						<br>
-						The location of an object in visual space drives neural activity selectively according to position near or far from fixation and along the horizontal and vertical meridians. The time course by which activity in category-selective areas is modulated by retinotopic variation is not well understood, and I’m working to better quantify the relationship between retinotopy and high-level visual processing.
-					</div>
-					<div class="question">
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px">
-								How does the position of a face in the left or right visual hemifield affect the representation of face identity in ventral temporal face selective areas?
-							</div>
-						</div>
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px">
-								When does variation in retinotopic location at a fixed eccentricity affect representational fidelity for individual faces, words, and phase-scrambled stimuli?
-							</div>
-						</div>
-					</div>
+					<span class="description-header">
+						Bankson, B.B.*, Hebart, M.N.*, Groen, I.I.A., & Baker, C.I.* (2018). The temporal evolution of conceptual object representations revealed through models of behavior, semantics and deep neural networks. Neuroimage.
+					</span>
+					<br>
+					This paper investigated the time course by which the brain forms conceptual representations from objects that can generalize from one exemplar to another (i.e. one vase to another vase). We used time-resolved multivariate decoding, model-based RSA from behavioral judgments and DCNN layers, and variance decomposition to identify 1) early decoding of individual object images by ~60 ms after stimulus onset, 2) generalization across individual exemplars of a concept peaking ~230 ms after stimulus onset, and 3) a transition from variance explained at early latencies by a DCNN layer to later contribution of behavior to MEG signal. Together, these results indicate a series of computations by which the brain forms generalizable conceptual representations that are behaviorally relevant during visual perception. 
 				</div>
 
 				<div class="card">
-					<div class="description">
-						<span class="description-header">
-							Numerical cognition and visual perception
-						</span>
-						<br>
-						Most numerical reasoning that humans engage in relies on symbolic number characters (digits) to represent nonsymbolic magnitude information. It is currently unclear the extent to which magnitude representations are shared across representational formats (digits, words, dot arrays), and furthermore how these representations emerge in time. I'm currently working on these questions with collaborators at Pitt and Harvard.
-					</div>
-					<div class="question">
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px">
-								What is the time course by which individual numbers across various representational formats can be classified from whole-head MEG signal, and how do models of low-level visual features and magnitude explain this evoked response?
-							</div>
-						</div>
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px">
-								How do number-selective sites in VTC and the inferior parietal sulcus (IPS) interact to assign magnitude information to visually-perceived digits and dot displays?
-							</div>
-						</div>
-					</div>
+					<span class="description-header">
+						Hebart, M.N., Bankson, B.B., Harel, A., Baker, C.I.*, & Cichy, R.M.* (2018). Representational dynamics of task context and its influence on visual object processing. eLife 7:e32816.
+					</span>
+					<br>
+					TWe used MEG and fMRI fusion to examine the relationship between task context and object recognition by combining measures of spatial and temporal dynamics. The results indicate separate but overlapping processes that elucidate task demands in frontoparietal and occipitotemporal areas. Temporally, task information accrues from early to higher visual areas and highlights the interplay of task and object information throughout brain regions across time. 
 				</div>
 			</div>
 		</div>
