@@ -58,15 +58,19 @@
 	</body>
 
 	<script>
-		console.log('hello13');
+		console.log('hello14');
 
 		var pic_counter = 1
 
 		function nextPic(){
+			console.log(pic_counter);
 			pic_counter+=1
+			console.log(pic_counter)
 
-			var new_src = "/static/food/"+pic_counter+".jpg";
-			document.getElementById("food_pic"),src = new_src;
+			var old_img = document.getElementById("food_pic");
+			old_img.src = "/static/food/"+pic_counter+".jpg";
+
+			// need something for when they run out of pictures
 		}
 
 	</script>
