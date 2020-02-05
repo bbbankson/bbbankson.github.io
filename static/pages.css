@@ -2,7 +2,8 @@
 
 
 body{
-    background-color: #DBE5DF;
+    /*background-color: #DBE5DF;*/
+    background-color: white;
     color: #2D3748 !important;
     line-height:2rem;
 }
