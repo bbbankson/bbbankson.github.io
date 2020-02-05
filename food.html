@@ -46,7 +46,7 @@
 		</div>
 
 		<div align="center">
-			<img src="/static/food/1.jpg" style="max-width:600px" onclick='nextPic();'>
+			<img id="food_pic" src="/static/food/1.jpg" style="max-width:600px" onclick='nextPic();'>
 
 			<div id="caption">
 				grilled radish, santa claus melon, shallots, honey vinaigrette
@@ -58,10 +58,15 @@
 	</body>
 
 	<script>
-		console.log('hello12');
+		console.log('hello13');
+
+		var pic_counter = 1
 
 		function nextPic(){
-			console.log('next')
+			pic_counter+=1
+
+			var new_src = "/static/food/"+pic_counter+".jpg";
+			document.getElementById("food_pic"),src = new_src;
 		}
 
 	</script>
