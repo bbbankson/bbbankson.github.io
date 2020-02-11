@@ -1,4 +1,5 @@
 <script>
+
 	function updateCaption(counter){
 		var img_caption = document.getElementById("food_caption");
 
@@ -48,5 +49,6 @@
 			img_caption.innerHTML = 'cardamom dacquoise, blood orange curd, parsnip crème patissiere, tarragon whip<br><br>(February 2020)'
 		}
 	}
+	
 </script>
 			
