@@ -49,28 +49,38 @@
 			<img id="food_pic" src="/static/food/1.jpg" style="max-width:600px" onclick='nextPic();'>
 
 			<div id="caption">
-				grilled radish, santa claus melon, shallots, honey vinaigrette
-				<br><br>
-				(August 2019)
+				<span id="food_caption">
+					grilled radish, santa claus melon, shallots, honey vinaigrette
+					<br><br>
+					(August 2019)
+				</span>
 			</div>
 		</div>
 
 	</body>
 
 	<script>
-		console.log('hello14');
+		console.log('caps1');
 
-		var pic_counter = 1
+		var counter = 1
 
 		function nextPic(){
-			console.log(pic_counter);
-			pic_counter+=1
-			console.log(pic_counter)
+			counter+=1
 
-			var old_img = document.getElementById("food_pic");
-			old_img.src = "/static/food/"+pic_counter+".jpg";
+			// Change picture only up until picture 22
+			if (counter < 23) {
+				var old_img = document.getElementById("food_pic");
+				old_img.src = "/static/food/"+counter+".jpg";
+			}
 
-			// need something for when they run out of pictures
+			// Update text
+			var img_caption = document.getElementById("food_caption");
+			if (counter == 1){
+				img_caption.innerHTML = 'grilled radish, santa claus melon, shallots, honey vinaigrette<br><br>(August 2019)'
+			} else if (counter == 2){
+				img_caption.innerHTML = 'placards for Cognitive Psychology reception<br><br>(January 2019)'
+			}
+
 		}
 
 	</script>
