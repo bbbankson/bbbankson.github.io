@@ -122,6 +122,17 @@
 					old_img.style.visibility = "block";
 					updateCaption(counter);
 				}
+
+				// Make sure that arrows are showing
+				document.getElementById("prev").display = "block";
+				document.getElementById("next").display = "block";
+
+			} else if (new_counter < 1) {
+				document.getElementById("prev").display = "none";
+				document.getElementById("next").display = "block";
+			} else if (new_counter > 22){
+				document.getElementById("prev").display = "block";
+				document.getElementById("next").display = "none";
 			} 
 		}
 
