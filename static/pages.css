@@ -4,7 +4,7 @@
 body{
     background-color: white;
     color: #2D3748 !important;
-    line-height:2rem;
+    line-height:2em;
 }
 
 html, body{
@@ -41,7 +41,8 @@ a:hover {
 @media screen and (max-width: 480px) {
 
 	body{
-		line-height:4rem;
+		font-size:4em;
+		line-height:4em;
 	}
 
 	.nav a{
