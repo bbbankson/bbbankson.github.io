@@ -13,7 +13,7 @@
 	<script type="text/javascript" src="../static/food/food_captions.js"></script>
 
 	<script>
-		console.log("new5")
+		console.log("new6")
 	</script>
 	<style>
 
@@ -105,11 +105,12 @@
 
 			console.log('got to changepic');
 			console.log(value);
-			
-			counter += parseInt(value);
 
 			// Change picture only up until picture 22
-			if (counter < 23 || counter > 0) {
+			if (counter > 21 || counter > 1) {
+				
+				counter += parseInt(value);
+
 				var old_img = document.getElementById("food_pic");
 				old_img.style.visibility = "none";
 				old_img.src = "/static/food/"+counter+".jpg";
@@ -118,8 +119,7 @@
 					old_img.style.visibility = "block";
 					updateCaption(counter);
 				}
-			}
-
+			} 
 		}
 
 	</script>
