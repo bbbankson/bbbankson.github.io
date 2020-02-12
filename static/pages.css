@@ -11,14 +11,16 @@ html, body{
 	height:100vh;
 }
 
-/*.nav {
-	display:fixed;
+.nav {
+	/*display:fixed;*/
 	padding:20px;
-	align-content: center;
-	line-height:30px;
-	color:#2D3748;
+	/*line-height:30px;*/
 }
-*/
+
+.nav a{
+	margin-right:30px;
+}
+
 
 a {
 	color: #2D3748 !important;
