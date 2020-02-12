@@ -76,13 +76,13 @@
 
 			<div class="row" style="border:1px solid blue;">
 				<div class="column">
-					<button><</button>
+					<button id="prev" onclick="changePic(-1);"><</button>
 				</div>
 				<div class="column">
 					<img id="food_pic" src="/static/food/1.jpg" style="max-width:600px" onclick='nextPic();'>
 				</div>
 				<div class="column">
-					<button>></button>
+					<button id="next" onclick="changePic(1);">></button>
 				</div>
 			</div>
 
@@ -101,8 +101,14 @@
 
 		var counter = 1
 
-		function nextPic(){
+		function changePic(value){
+
+			console.log(got to changepic)
+			console.log(value)
+			
 			counter+=1
+
+
 
 			// Change picture only up until picture 22
 			if (counter < 23) {
