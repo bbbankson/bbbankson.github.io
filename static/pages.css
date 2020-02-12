@@ -8,6 +8,7 @@ body{
 
 html, body{
 	height:100vh;
+	font-size:5rem;
 }
 
 .nav {
@@ -15,7 +16,7 @@ html, body{
 }
 
 .nav a{
-	font-size: 26px !important;
+	/*font-size: 26px !important;*/
 	margin-right:30px;
 }
 
