@@ -74,12 +74,10 @@
 
 				old_img.onload = function() {
 					old_img.style.visibility = "block";
+					updateCaption(counter);
 					console.log("loaded")
 				}
 			}
-
-			// Update the food caption
-			updateCaption(counter);
 
 		}
 
