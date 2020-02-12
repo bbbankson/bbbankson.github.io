@@ -76,13 +76,13 @@
 
 			<div class="row" style="border:1px solid blue;">
 				<div class="column">
-					<button id="prev" onclick="changePic(-1);"><</button>
+					<button id="prev" onclick="changePic();"><</button>
 				</div>
 				<div class="column">
 					<img id="food_pic" src="/static/food/1.jpg" style="max-width:600px">
 				</div>
 				<div class="column">
-					<button id="next" onclick="changePic(1);">></button>
+					<button id="next" onclick="changePic();">></button>
 				</div>
 			</div>
 
@@ -101,10 +101,9 @@
 
 		var counter = 1
 
-		function changePic(value){
+		function changePic(){
 
 			console.log('got to changepic');
-			console.log(value);
 			
 			counter+=1
 
