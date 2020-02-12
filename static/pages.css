@@ -32,24 +32,6 @@ a:hover {
 }
 
 .nav a{
-	/*font-size:1rem;*/
-	/*letter-spacing: 0.08em;*/
 	font-family: 'Raleway', sans-serif;
 	margin-right:30px
-}
-
-@media screen and (max-width: 480px) {
-
-	body{
-		font-size:62px;
-	}
-
-	/*body{
-		font-size:4em;
-		line-height:4em;
-	}*/
-
-	.nav a{
-		margin-right:10px !important;
-	}
 }
