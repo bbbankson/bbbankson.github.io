@@ -18,13 +18,6 @@
 			font-family: 'Nanum Gothic', sans-serif;
 		}
 
-		#title_div{
-			font-family: 'Comfortaa', cursive;
-			position:absolute;
-			line-height:50px;
-			font-size:50px;
-		}
-
 		#caption{
 			font-family: 'Comfortaa', cursive;
 			width:500px;
@@ -44,9 +37,15 @@
 
 		<div id="container" style="position: absolute; top: 50%; left: 50%; -ms-transform: translateX(-50%) translateY(-50%); -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);">
 			<div align="center">
+
 				<img id="food_pic" src="/static/food/1.jpg" style="max-width:600px" onclick='nextPic();'>
 
-				<div id="caption">
+				<div style="width:300px">
+					<div>back</div>
+					<div>next</div>
+				</div>
+
+				<div id="caption" style="width:300px">
 					<span id="food_caption">
 						grilled radish, santa claus melon, shallots, honey vinaigrette
 						<br><br>
@@ -75,7 +74,6 @@
 				old_img.onload = function() {
 					old_img.style.visibility = "block";
 					updateCaption(counter);
-					console.log("loaded")
 				}
 			}
 
