@@ -13,12 +13,11 @@ html, body{
 }
 
 .nav {
-	font-size:1.5rem;
+	font-size:1.75em;
 	padding:20px;
 }
 
 .nav a{
-	/*font-size: 26px !important;*/
 	margin-right:30px;
 }
 
@@ -28,16 +27,3 @@ a {
 	text-decoration: none !important;
 	text-transform: uppercase;
 }
-
-/*
-
-a:hover {
-	color: #DD6B20 !important;
-	padding-bottom:10px !important;
-	border-bottom: 2px solid #DD6B20 !important;
-}
-
-.nav a{
-	font-family: 'Raleway', sans-serif;
-	margin-right:30px
-}*/
