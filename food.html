@@ -26,6 +26,17 @@
 			font-size:26px;
 		}
 
+		.row {
+		    display: table;
+		    width: 100%; 
+		    table-layout: fixed; 
+		    border-spacing: 10px; 
+		}
+		.column {
+		    display: table-cell;
+		    background-color: red; 
+		}
+
 	</style>
 	
 	<body>
@@ -38,16 +49,10 @@
 		<div id="container" style="position: absolute; top: 50%; left: 50%; -ms-transform: translateX(-50%) translateY(-50%); -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);">
 			<div align="center">
 
-				<div id="row" style="max-width:600px;height:100px;border:1px solid blue">
-					<div id="column" style="width:10%;background-color:pink">
-						BACK
-					</div>
-					<div id="column" style="width:80%;background-color:yellow">
-						MIDDLE
-					</div>
-					<div id="column" style="width:10%;background-color:pink">
-						NEXT
-					</div>
+				<div class="row" style="max-width:600px;height:100px;border:1px solid blue">
+					<div class="column"><</div>
+					<div class="column">img</div>
+					<div class="column">></div>
 				</div>
 
 
