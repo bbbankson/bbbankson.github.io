@@ -34,7 +34,7 @@
 		}
 		.column {
 		    display: table-cell;
-		    background-color: red; 
+		    border:1px solid red;
 		}
 
 	</style>
@@ -50,18 +50,15 @@
 			<div align="center">
 
 				<div class="row" style="max-width:600px;height:100px;border:1px solid blue">
-					<div class="column"><</div>
-					<div class="column">img</div>
-					<div class="column">></div>
+					<div class="column" style="font-size:50px"><</div>
+					<div class="column">
+						<img id="food_pic" src="/static/food/1.jpg" style="max-width:600px" onclick='nextPic();'>
+					</div>
+					<div class="column" style="font-size:50px">></div>
 				</div>
 
 
 				<img id="food_pic" src="/static/food/1.jpg" style="max-width:600px" onclick='nextPic();'>
-
-				<div style="width:300px">
-					<div><</div>
-					<div>></div>
-				</div>
 
 				<div id="caption" style="width:300px">
 					<span id="food_caption">
