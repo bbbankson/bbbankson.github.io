@@ -53,7 +53,6 @@
 		.column {
 		    display: table-cell;
 		    vertical-align: middle;
-		    border:1px solid red;
 		    font-size:50px;
 		}
 
@@ -68,16 +67,20 @@
 
 		<div id="container" align="center">
 
-			<div class="row" style="border:1px solid blue;">
+			<div class="row">
+
 				<div class="column" style="max-width:50px">
 					<button id="prev" onclick="changePic(-1);"><</button>
 				</div>
+
 				<div class="column">
 					<img id="food_pic" src="/static/food/1.jpg" style="max-width:80vw">
 				</div>
+
 				<div class="column" style="max-width:50px">
 					<button id="next" onclick="changePic(1);">></button>
 				</div>
+
 			</div>
 
 			<div id="caption">
@@ -97,13 +100,8 @@
 
 		function changePic(value){
 
-			console.log(value);
-			console.log(counter);
-
 			var new_counter = 0;
 			var new_counter = counter+=parseInt(value);
-
-			console.log(new_counter);
 
 			// Change picture only up until picture 22
 			if (new_counter < 23 || new_counter > 0) {
