@@ -12,10 +12,10 @@ html, body{
 
 .nav {
 	padding:20px;
-	font-size: 26px !important;
 }
 
 .nav a{
+	font-size: 26px !important;
 	margin-right:30px;
 }
 
