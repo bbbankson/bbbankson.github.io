@@ -6,6 +6,13 @@ body{
     color: #2D3748 !important;
 }
 
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px)
+  and (resolution: 150dpi) {
+    body { line-height: 1.4; }
+}
+
 html, body{
 	height:100vh;
 	font-size: 1.5em;
@@ -13,7 +20,7 @@ html, body{
 }
 
 .nav {
-	font-size:1.75em;
+	font-size:1em;
 	padding:20px;
 	margin-bottom:20px;
 }
