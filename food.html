@@ -69,7 +69,13 @@
 			// Change picture only up until picture 22
 			if (counter < 23) {
 				var old_img = document.getElementById("food_pic");
+				old_img.style.visibility = "none";
 				old_img.src = "/static/food/"+counter+".jpg";
+
+				old_img.onload = function() {
+					old_img.style.visibility = "block";
+					console.log("loaded")
+				}
 			}
 
 			// Update the food caption
