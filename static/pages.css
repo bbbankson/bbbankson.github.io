@@ -18,12 +18,15 @@ html, body{
 	line-height:30px;
 	color:#2D3748;
 }
+*/
 
 a {
 	color: #2D3748 !important;
 	text-decoration: none !important;
 	text-transform: uppercase;
 }
+
+/*
 
 a:hover {
 	color: #DD6B20 !important;
