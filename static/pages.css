@@ -4,7 +4,7 @@
 body{
     background-color: white;
     color: #2D3748 !important;
-    line-height:2em;
+    /*line-height:2em;*/
 }
 
 html, body{
@@ -15,7 +15,7 @@ html, body{
 	display:fixed;
 	padding:20px;
 	align-content: center;
-	line-height:30px;
+	/*line-height:30px;*/
 	color:#2D3748;
 }
 
@@ -32,18 +32,18 @@ a:hover {
 }
 
 .nav a{
-	font-size:1rem;
-	letter-spacing: 0.08em;
+	/*font-size:1rem;*/
+	/*letter-spacing: 0.08em;*/
 	font-family: 'Raleway', sans-serif;
 	margin-right:30px
 }
 
 @media screen and (max-width: 480px) {
 
-	body{
+	/*body{
 		font-size:4em;
 		line-height:4em;
-	}
+	}*/
 
 	.nav a{
 		margin-right:10px !important;
