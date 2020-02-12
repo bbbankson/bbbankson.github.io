@@ -10,7 +10,7 @@ body{
   and (min-width: 320px) 
   and (max-width: 480px)
   and (resolution: 150dpi) {
-    body { line-height: 1; }
+    html, body { line-height: 1; }
 }
 
 html, body{
