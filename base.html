@@ -53,6 +53,29 @@
 
 	</style>
 
+	<script>
+
+		var counter = 1
+
+		console.log('changed counter')
+
+		function changePic(value){
+
+			console.log(counter);
+			console.log(value);
+
+			if (counter < 23){
+				counter += parseInt(value);
+				console.log(counter);
+			} else{
+				console.log('cant go any higher')
+			}
+
+		}
+
+	</script>
+
+
 	<body>
 
 		<div align="center">
@@ -93,27 +116,4 @@
 		</div>
 
 	</body>
-
-	<script>
-
-		var counter = 1
-
-		console.log('changed counter')
-
-		function changePic(value){
-
-			console.log(counter);
-			console.log(value);
-
-			if (counter < 23){
-				counter += parseInt(value);
-				console.log(counter);
-			} else{
-				console.log('cant go any higher')
-			}
-
-		}
-
-	</script>
-
 
