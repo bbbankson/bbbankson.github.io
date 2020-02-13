@@ -3,284 +3,148 @@
 
   	<head>
     	<title>Brett Baribault Bankson</title>
-    	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-    	<link href="/static/pages.css" rel="stylesheet" type="text/css">
-    	<script src="https://kit.fontawesome.com/8ad481cdeb.js"></script>
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> <!-- header font -->
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet"> <!-- body font -->
+		<link href="/base.css" rel="stylesheet" type="text/css"> <!-- base style -->
+
 	</head>
-
-	<script>
-
-		function switchTab() {
-		    // Switches the tab from Interests to Papers and vice versa
-		    var interests = document.getElementById("interests");
-		    var papers = document.getElementById("papers");
-		    if (interests.style.display === "none") {
-				interests.style.display = "block";
-				papers.style.display = "none";
-			} else {
-				interests.style.display = "none";
-				papers.style.display = "block";
-			}
-		}
-		
-	</script>
 
 	<style>
 
-		body {
-			font-family: 'Nanum Gothic', sans-serif;
-			padding:0px !important;
-			margin:0px !important;
+		#container{
+			max-width:100%;
 		}
 
-		#container {
-			width:100%;
-			overflow-x:none;
+		.row {
+			display: table;
+			width: 100%;
 		}
 
-		#title_div{
-			padding:0px 25px 0px 25px;
-			top:60px;
-			font-family: 'Comfortaa', cursive;
-			line-height:50px;
-			font-size:50px;
-			margin-bottom:20px;
-		}
-
-		.sub_header{
-			color: #234E52; font-size:2rem;
-		}
-
-		.card {
-			padding:25px;
-			display:table;
-		}
-
-		.description{
-			display:table-cell;
-			width:50%;
-			padding:20px;
-		}
-
-		.question{
-			display:table-cell;
-			vertical-align: middle;
-			width:50%;
-			padding:20px;
-		}
-
-		.fa-question-circle{
-			padding-top:4px;
-			font-size:2rem;
-			color: #285E61;
-		}
-
-
-		.emphasis-span{
-			font-family: 'Nanum Gothic Extra-Bold', sans-serif;
-		}
-
-		.question-span{
-			display:table;
-		}
-
-		.question-cell{
-			display:table-cell;
+		.column {
+			display: table-cell;
 			vertical-align: top;
-			padding-bottom:15px;
+			padding:20px;
 		}
 
-		.description-header{
+		.interests-card{
+			border-top:2px solid black
+			padding-top:10px;
+		}
+
+		.card-header{
+			font-family: 'Raleway', sans-serif !important;
 			text-transform: uppercase;
-			font-size: 1.2rem; 
-			font-family: 'Nanum Gothic Extra-Bold', sans-serif;
-			color: #285E61;
+			font-weight:bolder;
 		}
 
-		.white_background{
-			background-color: white !important;
-		}
-
-		.white_background .fa-question-circle{
-			color: #FADDD1 !important;
-		}
-
-		@media screen and (max-width: 480px) {
-			#title_div{
-				text-align:center;
-			}
-			.card {
-			    display: block !important;
-			    padding:20px 10px 0px 10px;
-			}
-			.description, .question {
-			  	padding-top:0px !important;
-			    display: inline-block !important;
-			    width:auto !important;
-			}
-
-			.sub_header {
-			  	font-size:1.5rem;
+		@media only screen and (max-width: 480px) {
+		    body{
+				background-color:red !important;
 			}
 		}
 
-		#research_summary{
-			padding:25px 25px 25px 25px;
-		}
-
-		#research_links {
-			padding:0px 0px 15px 0px;
-			border-bottom:3px solid #319795;
-		}
-
-		#research_links a{
-			margin:0px 20px 0px 20px;
-		}
 	</style>
 
 	<body>
-		<div class="nav">
-			<a href="/" style="margin-right:30px">Home</a>
-			<a href="/about" style="margin-right:30px">About</a>
-			<a href="/food">Food</a>
-		</div>
 
-		<div id="container">
-			<div id="title_div" align="center">RESEARCH</div>
+		<div align="center">
+			<div id="container">
 
-			<div id="research_links" align="center">
-				<a href="#!" onclick="switchTab()">Interests</a>
-				<a href="#!" onclick="switchTab()">Papers</a>
-			</div>
+				<div class="header">brett bankson</div>
 
-			<div id="interests" class="research_div">
-
-				<div id="research_summary" class="white_background">
-					<span class="sub_header">The human brain rapidly and effortlessly extracts visual information from our environments on a millisecond-to-millisecond basis.</span>
-
-					<p>
-						How does coordinated activity throughout visually responsive areas of the brain <span class="emphasis-span">compute this input to yield high-level information</span> that informs mental states and behavior? There are several research avenues I’m working on to further our understanding of this process, using spatiotemporally-resolved recordings from <i>intracranial electroencephalography (iEEG)</i> to provide sensitive and dynamic portraits of brain activity.
-					</p>
-
+				<div class = "nav" style="padding:20px;">
+					<a href="/index">HOME</a>
+					<a href="/about">ABOUT</a>
+					<a href="/research">RESEARCH</a>
+					<a href="/food">FOOD</a>
 				</div>
 
-				<div class="card">
-					<div class="description">
-						<span class="description-header">
-							Spatiotemporal dynamics of face perception and natural vision
-						</span>
-						<br>
-						When we see a face, we encode information from many feature dimensions – identity, age, gender, expression, gaze direction, etc. These features are functionally relevant and shape our interpretation of people in front of us. 
-					</div>
-					<div class="question">
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px;">
-								How are different face feature dimensions that form and motion-related aspects encoded in time across ventral and dorsal visual streams?
-							</div>
-						</div>
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px">
-								Do non-face preferring areas represent face information that is independent from canonical face preferring areas, and does this extend to other categories of visual objects?
-							</div>
-						</div>
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px">
-								How does the brain extract identity and affective information from dynamic videos of spontaneous facial expressions?
-							</div>
-						</div>
-					</div>
+				<div class = "nav" style="padding:10px 0px 0px 0px !important;border-top:2px solid black">
+					<a href="#interests">RESEARCH INTERESTS</a>
+					<a href="#papers">PAPERS</a>
 				</div>
 
-				<div class="card white_background">
-					<div class="description">
-						<span class="description-header">
-							Retinotopy and visual perception
-						</span>
-						<br>
-						The location of an object in visual space drives neural activity selectively according to position near or far from fixation and along the horizontal and vertical meridians. The time course by which activity in category-selective areas is modulated by retinotopic variation is not well understood, and I’m working to better quantify the relationship between retinotopy and high-level visual processing.
-					</div>
-					<div class="question">
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px">
-								How does the position of a face in the left or right visual hemifield affect the representation of face identity in ventral temporal face selective areas?
-							</div>
-						</div>
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px">
-								When does variation in retinotopic location at a fixed eccentricity affect representational fidelity for individual faces, words, and phase-scrambled stimuli?
-							</div>
-						</div>
-					</div>
-				</div>
+				<div id="interests" align="left">
 
-				<div class="card">
-					<div class="description">
-						<span class="description-header">
-							Numerical cognition and visual perception
-						</span>
-						<br>
-						Most numerical reasoning that humans engage in relies on symbolic number characters (digits) to represent nonsymbolic magnitude information. It is currently unclear the extent to which magnitude representations are shared across representational formats (digits, words, dot arrays), and furthermore how these representations emerge in time. I'm currently working on these questions with collaborators at Pitt and Harvard.
-					</div>
-					<div class="question">
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px">
-								What is the time course by which individual numbers across various representational formats can be classified from whole-head MEG signal, and how do models of low-level visual features and magnitude explain this evoked response?
-							</div>
+					<div class="row" id="interests-header" style="font-size:2em;line-height:1.5em;padding:20px">
+						The human brain rapidly and effortlessly extracts visual information from our environments on a millisecond-to-millisecond basis.
+					</div> <!-- interests header -->
+
+					<div class="row" id="interests-overview" style="padding:0px 20px 0px 20px">
+						How does coordinated activity throughout visually responsive areas of the brain <b>compute this input to yield high-level information</b> that informs mental states and behavior? There are several research avenues I’m working on to further our understanding of this process, using spatiotemporally-resolved recordings from <i>intracranial electroencephalography (iEEG)</i> to provide sensitive and dynamic portraits of brain activity.
+					</div> <!-- interests overview-->
+
+					<div class="row" class="interests-card">
+						<div class="column" style="width:50%;">
+							<span class="card-header">
+								Spatiotemporal dynamics of face perception and natural vision
+							</span>
+							<br>
+							When we see a face, we encode information from many feature dimensions – identity, age, gender, expression, gaze direction, etc. These features are functionally relevant and shape our interpretation of people in front of us. 
 						</div>
-						<div class="question-span">
-							<div class="question-cell">
-								<i class="far fa-question-circle"></i>
-							</div>
-							<div class="question-cell" style="padding-left: 20px">
-								How do number-selective sites in VTC and the inferior parietal sulcus (IPS) interact to assign magnitude information to visually-perceived digits and dot displays?
-							</div>
+
+						<div class="column" style="width:50%;">
+							<ol>
+								<li>
+									How are different face feature dimensions that form and motion-related aspects encoded in time across ventral and dorsal visual streams?
+								</li>
+								<li>
+									Do non-face preferring areas represent face information that is independent from canonical face preferring areas, and does this extend to other categories of visual objects?
+								</li>
+								<li>
+									How does the brain extract identity and affective information from dynamic videos of spontaneous facial expressions?
+								</li>
+							</ol>
 						</div>
-					</div>
-				</div>
-			</div>
+					</div> <!--interests card -->
 
-			<div id="papers" class="research_div" style="display:none">
+					<div class="row" class="interests-card">
+						<div class="column" style="width:50%;">
+							<span class="card-header">
+								Retinotopy and visual perception
+							</span>
+							<br>
+							The location of an object in visual space drives neural activity selectively according to position near or far from fixation and along the horizontal and vertical meridians. The time course by which activity in category-selective areas is modulated by retinotopic variation is not well understood, and I’m working to better quantify the relationship between retinotopy and high-level visual processing.
+						</div>
 
-				<div class="card white_background">
-					<span class="description-header">
-						Bankson, B.B.*, Hebart, M.N.*, Groen, I.I.A., & Baker, C.I.* (2018). The temporal evolution of conceptual object representations revealed through models of behavior, semantics and deep neural networks. Neuroimage.
-					</span>
-					<p style="margin-left:20px">
-						This paper investigated the time course by which the brain forms conceptual representations from objects that can generalize from one exemplar to another (i.e. one vase to another vase). We used time-resolved multivariate decoding, model-based RSA from behavioral judgments and DCNN layers, and variance decomposition to identify 1) early decoding of individual object images by ~60 ms after stimulus onset, 2) generalization across individual exemplars of a concept peaking ~230 ms after stimulus onset, and 3) a transition from variance explained at early latencies by a DCNN layer to later contribution of behavior to MEG signal. Together, these results indicate a series of computations by which the brain forms generalizable conceptual representations that are behaviorally relevant during visual perception. 
-					</p>
-				</div>
+						<div class="column" style="width:50%;">
+							<ol>
+								<li>
+									How does the position of a face in the left or right visual hemifield affect the representation of face identity in ventral temporal face selective areas?
+								</li>
+								<li>
+									When does variation in retinotopic location at a fixed eccentricity affect representational fidelity for individual faces, words, and phase-scrambled stimuli?
+								</li>
+							</ol>
+						</div>
+					</div> <!--interests card -->
 
-				<div class="card">
-					<span class="description-header">
-						Hebart, M.N., Bankson, B.B., Harel, A., Baker, C.I.*, & Cichy, R.M.* (2018). Representational dynamics of task context and its influence on visual object processing. eLife 7:e32816.
-					</span>
-					<p style="margin-left:20px">
-						We used MEG and fMRI fusion to examine the relationship between task context and object recognition by combining measures of spatial and temporal dynamics. The results indicate separate but overlapping processes that elucidate task demands in frontoparietal and occipitotemporal areas. Temporally, task information accrues from early to higher visual areas and highlights the interplay of task and object information throughout brain regions across time. 
-					</p>
-				</div>
-			</div>
+					<div class="row" class="interests-card">
+						<div class="column" style="width:50%;">
+							<span class="card-header">
+								Numerical cognition and visual perception
+							</span>
+							<br>
+							Most numerical reasoning that humans engage in relies on symbolic number characters (digits) to represent nonsymbolic magnitude information. It is currently unclear the extent to which magnitude representations are shared across representational formats (digits, words, dot arrays), and furthermore how these representations emerge in time. I'm currently working on these questions with collaborators at Pitt and Harvard.
+						</div>
+
+						<div class="column" style="width:50%;">
+							<ol>
+								<li>
+									What is the time course by which individual numbers across various representational formats can be classified from whole-head MEG signal, and how do models of low-level visual features and magnitude explain this evoked response?
+								</li>
+								<li>
+									How do number-selective sites in VTC and the inferior parietal sulcus (IPS) interact to assign magnitude information to visually-perceived digits and dot displays?
+								</li>
+							</ol>
+						</div>
+					</div> <!--interests card -->
+
+				</div> <!-- interests -->
+
+			</div> <!-- container -->
 		</div>
 
 	</body>
+
 </html>
