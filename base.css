@@ -19,6 +19,22 @@ body {
 	font-size: 3em;
 }
 
+.nav {
+	padding: 0px !important;
+}
+
+.nav a{
+	text-decoration: none !important;
+	color: black;
+	padding: 10px;
+}
+
+.nav a:hover {
+	padding-bottom: 10px;
+	color: #DD6B20;
+	border-bottom: 2px solid #DD6B20;
+}
+
 #profile-pic{
 	width:391px;
 	height:250px;
