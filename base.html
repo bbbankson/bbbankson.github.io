@@ -52,11 +52,7 @@
 		}
 
 	</style>
-
-	<script>
-		console.log('food2')
-	</script>
-
+	
 	<body>
 
 		<div align="center">
@@ -102,12 +98,21 @@
 
 		var counter = 1
 
+		console.log('changed counter')
+
 		function changePic(value){
 
 			console.log(counter);
 			console.log(value);
-			counter += parseInt(value);
-			console.log(counter);
+
+			if (counter < 23){
+				counter += parseInt(value);
+				console.log(counter);
+			} else{
+				console.log('cant go any higher')
+			}
+
+			if(counter)
 
 		}
 
