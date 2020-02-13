@@ -65,6 +65,7 @@
 				
 				counter += parseInt(value);
 
+				// Change the button display
 				if (counter == 22){
 					document.getElementById("next").disabled = true;
 					document.getElementById("prev").disabled = false;
@@ -75,6 +76,11 @@
 					document.getElementById("next").disabled = false;
 					document.getElementById("prev").disabled = false;
 				}
+
+				// Update the image
+				document.getElementById("food_pic").display = "none";
+				document.getElementById("food_pic").src = "/static/food/"+counter+".jpg";
+				document.getElementById("food_pic").display = "block";
 
 			} 
 
