@@ -36,8 +36,8 @@ body {
   	}
 
   	body {
-  		font-size: 3em;
-  		line-height:4em;
+  		font-size: 3em !important;
+  		line-height:4em !important;
   	}
 
 }
