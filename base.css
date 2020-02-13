@@ -20,6 +20,7 @@ body {
 }
 
 #profile-pic{
+	width:391px;
 	height:250px;
 	background-image: url('/static/profile.png');
 	background-size: cover;
