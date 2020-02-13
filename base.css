@@ -29,11 +29,11 @@ body {
   and (resolution: 150dpi) {
     
   	.header {
-  		font-size: 30px;
+  		font-size: 4em;
   	}
 
   	body {
-  		font-size: 30px;
+  		font-size: 3em;
   	}
 
 }
