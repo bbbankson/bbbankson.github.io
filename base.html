@@ -9,6 +9,8 @@
 
 	</head>
 
+	<script type="text/javascript" src="../static/food/food_captions.js"></script>
+
 	<style>
 
 		button{
@@ -62,22 +64,25 @@
 
 		function changePic(value){
 
-			console.log(counter);
-			console.log(value);
-
 			if (counter < 22){
 
 				document.getElementById("next").disabled = true;
 				document.getElementById("prev").disabled = true;
+				document.getElementById("food_caption").display = "none";
+				document.getElementById("food_pic").display = "none";
 				
 				counter += parseInt(value);
 
 				// Update the image
-				document.getElementById("food_pic").display = "none";
 				document.getElementById("food_pic").src = "/static/food/"+counter+".jpg";
 				document.getElementById("food_pic").display = "block";
 
+				// Once the image loads:
 				document.getElementById("food_pic").onload = function() {
+
+					// Update the caption:
+					updateCaption(counter);
+					document.getElementById("food_caption").display = "block";
 
 					// Change the button display
 					if (counter == 22){
