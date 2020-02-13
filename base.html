@@ -9,8 +9,6 @@
 
 	</head>
 
-	<script type="text/javascript" src="../static/food/food_captions.js"></script>
-
 	<style>
 
 		button{
@@ -20,24 +18,13 @@
 
 		.row {
 			display: table;
-			width: 100%; 
-			height: 300px;
+			width: 100%;
 		}
 
 		.column {
 			display: table-cell;
 			vertical-align: middle;
 			padding:20px;
-		}
-
-		#container{
-			width:80vw;
-			min-width:650px;
-		}
-
-		#food_caption{
-			padding: 10px 0px 0px 0px; 
-			border-top:2px solid black;
 		}
 
 		@media only screen and (max-width: 480px) {
@@ -51,52 +38,6 @@
 		}
 
 	</style>
-
-	<script>
-
-		console.log('change size')
-
-		var counter = 1
-
-		function changePic(value){
-
-			if (counter < 22){
-
-				document.getElementById("next").disabled = true;
-				document.getElementById("prev").disabled = true;
-				document.getElementById("food_caption").display = "none";
-				document.getElementById("food_pic").display = "none";
-				
-				counter += parseInt(value);
-
-				// Update the image
-				document.getElementById("food_pic").src = "/static/food/"+counter+".jpg";
-				document.getElementById("food_pic").display = "block";
-
-				// Once the image loads:
-				document.getElementById("food_pic").onload = function() {
-
-					// Update the caption:
-					updateCaption(counter);
-					document.getElementById("food_caption").display = "block";
-
-					// Change the button display
-					if (counter == 22){
-						document.getElementById("next").disabled = true;
-						document.getElementById("prev").disabled = false;
-					} else if(counter == 1){
-						document.getElementById("next").disabled = false;
-						document.getElementById("prev").disabled = true;
-					} else {
-						document.getElementById("next").disabled = false;
-						document.getElementById("prev").disabled = false;
-					}
-				}
-
-			} 
-		}
-
-	</script>
 
 	<body>
 
@@ -117,19 +58,27 @@
 					<a href="#papers">PAPERS</a>
 				</div>
 
-				<div id="interests">
+				<div id="interests" align="left">
+
+					<div class="row" id="interests-header" style="font-size:2em">
+						The human brain rapidly and effortlessly extracts visual information from our environments on a millisecond-to-millisecond basis.
+					</div> <!-- interests header -->
 
 					<div class="row" id="interests-overview">
+						How does coordinated activity throughout visually responsive areas of the brain <b>compute this input to yield high-level information</b> that informs mental states and behavior? There are several research avenues I’m working on to further our understanding of this process, using spatiotemporally-resolved recordings from <i>intracranial electroencephalography (iEEG)</i> to provide sensitive and dynamic portraits of brain activity.
+					</div> <!-- interests overview-->
 
+					<div class="row" id="interests-card">
 						<div class="column" style="width:50%;">
-							The human brain rapidly and effortlessly extracts visual information from our environments on a millisecond-to-millisecond basis.
+							Spatiotemporal dynamics of face perception and natural vision
+							<br>
+							When we see a face, we encode information from many feature dimensions – identity, age, gender, expression, gaze direction, etc. These features are functionally relevant and shape our interpretation of people in front of us. 
 						</div>
 
 						<div class="column" style="width:50%;">
-							How does coordinated activity throughout visually responsive areas of the brain <b>compute this input to yield high-level information</b> that informs mental states and behavior? There are several research avenues I’m working on to further our understanding of this process, using spatiotemporally-resolved recordings from <i>intracranial electroencephalography (iEEG)</i> to provide sensitive and dynamic portraits of brain activity.
+							questions
 						</div>
-
-					</div> <!--interests overview -->
+					</div> <!--interests card -->
 
 				</div> <!-- interests -->
 
