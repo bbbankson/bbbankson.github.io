@@ -40,21 +40,10 @@
 			border-top:2px solid black;
 		}
 
-		@media only screen 
-		  and (min-width: 320px) 
-		  and (max-width: 480px)
-		  and (resolution: 150dpi) {
+		@media only screen and (max-width: 600px) {
 		    
 		  	#container {
 		  		width: 100vw !important;
-		  	}
-
-		  	.column {
-		  		width:2% !important;
-		  	}
-
-		  	#row {
-		  		margin-top:20px !important;
 		  	}
 
 		}
@@ -82,7 +71,7 @@
 				} else if(counter == 1){
 					document.getElementById("next").disabled = false;
 					document.getElementById("prev").disabled = true;
-				} else{
+				} else {
 					document.getElementById("next").disabled = false;
 					document.getElementById("prev").disabled = false;
 				}
