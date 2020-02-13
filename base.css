@@ -1,4 +1,8 @@
 
+body {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
 #container {
 	border:1px solid red;
 	align-content: center;
@@ -14,6 +18,7 @@
 }
 
 #profile-pic{
+	height:20vw; width:20vw;
 	background-image: url('/static/profile.png');
 	background-size: cover;
 }
