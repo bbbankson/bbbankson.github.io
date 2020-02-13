@@ -1,6 +1,6 @@
 
 body {
-	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 #container {
@@ -18,7 +18,7 @@ body {
 }
 
 #profile-pic{
-	height:20vw; width:20vw;
+	max-height:300px;
 	background-image: url('/static/profile.png');
 	background-size: cover;
 }
