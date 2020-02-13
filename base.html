@@ -68,13 +68,24 @@
 			console.log(counter);
 			console.log(value);
 
-			if (counter > 22){
-				document.getElementById("next").disabled = true;
-			} else {
+			if (counter < 22){
+				
 				counter += parseInt(value);
-				console.log(counter);
-			}
 
+				if (counter == 22){
+					document.getElementById("next").disabled = true;
+					document.getElementById("prev").disabled = false;
+				} else if(counter == 1){
+					document.getElementById("next").disabled = false;
+					document.getElementById("prev").disabled = true;
+				} else{
+					document.getElementById("next").disabled = false;
+					document.getElementById("prev").disabled = false;
+				}
+
+			} 
+
+			console.log(counter);
 		}
 
 	</script>
@@ -96,7 +107,7 @@
 				<div class="row">
 
 					<div class="column" style="width:5%;">
-						<button id="prev" onclick="changePic(-1);"><</button>
+						<button id="prev" onclick="changePic(-1);" disabled='true'><</button>
 					</div>
 
 					<div class="column" style="width:90%">
