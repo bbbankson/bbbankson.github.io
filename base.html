@@ -64,17 +64,16 @@
 			console.log(counter);
 			console.log(value);
 
-			if (counter < 23){
+			if (counter > 22){
+				document.getElementById("next").disabled = true;
+			} else {
 				counter += parseInt(value);
 				console.log(counter);
-			} else{
-				console.log('cant go any higher')
 			}
 
 		}
 
 	</script>
-
 
 	<body>
 
@@ -93,7 +92,7 @@
 				<div class="row">
 
 					<div class="column" style="width:5%;">
-						<button onclick="changePic(-1);"><</button>
+						<button id="prev" onclick="changePic(-1);"><</button>
 					</div>
 
 					<div class="column" style="width:90%">
@@ -101,7 +100,7 @@
 					</div>
 
 					<div class="column" style="width:5%;">
-						<button onclick="changePic(1);">></button>
+						<button id="next" onclick="changePic(1);">></button>
 					</div>
 
 				</div>
