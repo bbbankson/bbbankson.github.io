@@ -17,6 +17,10 @@
 	padding:20px;
 }
 
+#container{
+	width:650px;
+}
+
 .icon-container{
 	display:table;
 	width: 100%;
@@ -32,6 +36,18 @@
 	height:50px;
 }
 
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px)
+  and (resolution: 150dpi) {
+    
+  	#container {
+  		width: 100vw;
+  		padding:30px;
+  	}
+
+}
+
 </style>
 
 <script>
@@ -41,7 +57,7 @@
 <body>
 
 	<div align="center">
-		<div id="container" style="width:650px">
+		<div id="container">
 
 			<div class="header">brett bankson</div>
 
