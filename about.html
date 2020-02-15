@@ -50,15 +50,18 @@
 		}
 
 		@media only screen and (max-width: 480px) {
+		  	
+			body{
+				margin: 0px;
+			}
 		  	#container {
-		  		width: 100vw !important;
-		  		min-width:300px !important;
-		  		max-width:350px !important;
+		  		width:100vw;
 		  	}
 
 		  	.column {
+		  		display:block;
 		  		min-width:300px !important;
-		  		border: 1px solid red;
+		  		border: 1px solid blue;
 		  		max-width:350px !important;
 		  	}
 
@@ -66,12 +69,16 @@
 		  		width:280px !important;
 		  	}
 
-		  	.icon_container {
+		  	.icon_container  {
 		  		float:left;
 		  	}
 		}
 
 	</style>
+
+	<script>
+		console.log('update')
+	</script>
 
 	<body>
 
