@@ -51,6 +51,10 @@
 				font-size:1.5em;
 			}
 
+			btn-column{
+				width:2.5%;
+			}
+
 		  	#container {
 		  		width: 100vw !important;
 		  		min-width:300px;
@@ -60,7 +64,7 @@
 		  		padding:2px !important;
 		  	}
 
-		  	#food-caption{
+		  	#food_caption{
 		  		margin-left:10px;
 		  		margin-right:10px;
 		  	}
@@ -134,7 +138,7 @@
 
 				<div class="row" style="height:400px">
 
-					<div class="column" style="width:5%;">
+					<div class="column btn-column" style="width:5%;">
 						<button id="prev" onclick="changePic(-1);" disabled='true'><</button>
 					</div>
 
@@ -142,7 +146,7 @@
 						<img id="food_pic" src="/static/food/1.jpg" style="max-width:100%;max-height:400px">
 					</div>
 
-					<div class="column" style="width:5%;">
+					<div class="column btn-column" style="width:5%;">
 						<button id="next" onclick="changePic(1);">></button>
 					</div>
 
