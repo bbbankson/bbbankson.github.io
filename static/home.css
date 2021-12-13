@@ -33,7 +33,6 @@ html, body{
 }
 
 .title{
-	font-family: 'Playfair Display Black', serif;
 	font-size: 6rem;
 	text-transform: uppercase;
 	cursor: default !important;
