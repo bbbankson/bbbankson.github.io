@@ -1,92 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   	<head>
     	<title>Brett Baribault Bankson</title>
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> <!-- header font -->
-		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet"> <!-- body font -->
-		<link href="/base.css" rel="stylesheet" type="text/css"> <!-- base style -->
+
+    	<!-- Raleway font -->
+    	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
+		<!-- Stylesheet -->
+		<link href="/base.css" rel="stylesheet" type="text/css"> 
 	</head>
 
 	<style>
 
-		.row {
-			display: table;
-			width: 100%; 
-			height: 300px;
+		.wrapper{
+			width:100%;
 		}
 
-		.column {
-			display: table-cell;
-			vertical-align: middle;
+		#about-image {
+			display:inline-block; 
+			vertical-align:top; 
+			width:30%; 
+			min-width:300px;
+			max-width:350px;
+			content: url("../static/about/about-photo-1.jpeg");
+			border:1px solid#3F3532;
+			margin-top:15px;
 		}
 
-		#container{
-			width:650px;
-		}
-
-		.icon-container{
-			display:table;
-			width: 100%;
-		}
-
-		.icon-div{
-			display:table-cell;
-			padding:20px;
-			width:50%;
-		}
-
-		.icon{
-			width:50px;
-			height:50px;
-		}
-
-		#profile-pic{
-			width:391px;
-			height:250px;
-			background-image: url('/static/about/profile.png');
-			background-size: cover;
-		}
-
-		@media only screen and (max-width: 480px) {
-		  	
-			body{
-				margin: 0px;
-			}
-
-		  	#container {
-		  		width:100vw;
-		  	}
-
-		  	.column {
-		  		display:block;
-		  		min-width:300px !important;
-		  		max-width:350px !important;
-		  	}
-
-		  	#profile-pic {
-		  		margin-top:10px;
-		  		width:280px !important;
-		  	}
-
-		  	.icon_container  {
-		  		float:left;
-		  	}
-
-		  	.icon-div {
-		  		margin-top:5px !important;
-		  		padding:0px !important;
-		  	}
-
-		  	.icon{
-		  		width:25px;
-		  		height:25px;
-		  	}
-
-		  	#about-text{
-		  		margin:15px;
-		  	}
+		#about-text{
+			display:inline-block; 
+			vertical-align:top; 
+			width:50%; 
+			min-width:300px;
+			max-width:550px;
+			text-align: left;
+			margin-left:25px;
 		}
 
 	</style>
@@ -96,54 +46,44 @@
 		<div align="center">
 			<div id="container">
 
-				<div class="header">brett bankson</div>
-
-				<div class = "nav" style="padding:20px;">
-					<a href="/index">HOME</a>
-					<a href="/about">ABOUT</a>
-					<a href="/research">RESEARCH</a>
-					<a href="/food">FOOD</a>
-				</div>
-
-				<div class="row" style="max-width:650px">
-
-					<div id="profile-container" class="column" style="width:391px;">
-						<div id="profile-pic"></div>
+				<!-- Nav bar -->
+				<div class="nav-bar">
+					<div class="header">brett <b>bankson</b></div>
+					<div class="nav-links">
+						<a class="nav-link selected" href="/about">ABOUT</a>
+						<a class="nav-link" href="/catering">CATERING</a>
+						<a class="nav-link" href="/recipes">RECIPES</a>
+						<a class="nav-link" href="/media">MEDIA</a>
+						<a class="nav-link" href="/contact">CONTACT</a>
 					</div>
+				</div> <!-- end of nav bar-->
 
-					<div class="column" style="width:259px;">
-						
-						<a href="mailto:brett.bbankson@gmail.com">brett.bbankson@gmail.com</a>
-						
-						<div class="icon-container">
+				<div class='wrapper'>
 
-							<div class="icon-div" align="right" style="padding-right:10px">
-								<a href="https://www.instagram.com/bbbangsta"><img class="icon" src="/static/about/instagram.svg"></a>
-							</div>
+					<!-- Image in left Col -->
+				    <div id="about-image"></div>
 
-							<div class="icon-div" align="left" style="padding-left:10px">
-								<a href="https://www.linkedin.com/in/brett-bankson-8247b354/"><img class="icon" src="/static/about/linkedin.svg"></a>
-							</div>
-
-						</div>
-					</div>
-
+				    <!-- Text in right col -->
+				    <div id="about-text">
+				    	<p>
+				    		<span style="font-size:2em;font-weight:bolder;color:#C46D55">Hi! I'm a private chef and caterer (currently) located in Seattle.</span>
+				    	</p>
+				        <p>
+							My food and cooking process is inspired by the ephemera of seasons, which concretely just means that (among other things) I like to cook vegetables, heirloom beans, offal and whole grains with as many herbs, citrus, and flavorful fats as I can appropriately combine in a dish. I am in awe of the farmers, winemakers, and general land stewards around me in the Pacific Northwest: I view cooking as my way of honoring those meaningful + regenerative relationships with the land that we live on.
+						</p>
+						<p>
+							I would love to work with you on your next culinary event, whatever the occasion: birthday, anniversary, wedding, just a fun weeknight! Feel free to contact me through email or on Instagram and we can come up with a bespoke menu that reflects your preferences and my expertise - I can't wait! Click through the images on the “catering” tab above for some examples of previous menus and photos of my food. Thanks for visiting!
+						</p>
+						<p style="text-align:right"> 
+							<span style="font-size:2em;font-weight:bolder; color:#C46D55">- BBB.</span>
+						</p>
+				    </div>
 				</div>
 
-				<div id="about-text" style="padding: 0px; border-top:2px solid black" align="left">
-					<p>
-						Hi! I’m a third-year graduate student working with Avniel Ghuman in the Laboratory of Cognitive Neurodynamics at the University of Pittsburgh. 
-					</p>
-					<p>
-						I’m broadly interested in understanding how visual perception unfolds dynamically in the brain, and am currently interested in the distributed mechanisms that support our perception of faces, objects, and numbers. Outside of lab, I spend a lot of time cooking and reading cookbooks, doing yoga, taking care of my plants, and having a really good time in Pittsburgh.  
-					</p>
-					<p>
-						I previously worked with Chris Baker in the Section on Learning and Plasticity at the National Institute of Mental Health, and with Susan Baillet as an undergraduate at the University of Portland.
-					</p>
-				</div>
+				
 
-			</div> <!-- container -->
-		</div>
+			</div>  
+		</div> 
 
 	</body>
 

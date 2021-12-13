@@ -1,33 +1,48 @@
 
-body {
+
+body, .header {
 	font-family: 'Raleway', sans-serif;
 	line-height:2em;
+	background-color:#F3F3F3;
+	color: #3F3532;
 }
 
-a {
-	text-decoration: none !important;
-	color: black !important;
-	padding: 10px !important;
-}
-
-a:hover {
-	padding-bottom: 10px;
-	color: #DD6B20;
-	border-bottom: 2px solid #DD6B20;
+.nav-bar{
+	margin-top:10px;
+	padding-top:10px;
+	height:160px;
 }
 
 .header {
-	height: 75px;
-	margin:10px;
 	display: table-cell;
 	vertical-align: middle;
-	font-family: 'Playfair Display Black', serif;
 	font-size: 3em;
 }
 
-.nav {
-	padding: 0px !important;
+.nav-links{
+	margin-top:5px;
 }
+
+.nav-link{
+	font-size:1.25em;
+	margin:10px;
+}
+
+a {
+	color:#3F3532;
+	text-decoration:none;
+}
+
+a.selected, a.selected:hover {
+	color:#C46D55;
+	font-weight:bold;
+	pointer-events: none;
+}
+
+a:hover {
+	color:#BF8676;
+}
+
 
 @media only screen 
   and (min-width: 320px) 
