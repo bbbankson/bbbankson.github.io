@@ -45,7 +45,6 @@
 		.media-text{
 			display:inline-block; 
 			vertical-align:top;
-			width:560px;
 			text-align: left;
 			margin-left:25px;
 			line-height:1.6em !important;
@@ -64,6 +63,25 @@
 
 		.media-div:hover {
 			border-color:#C46D55 !important;
+		}
+
+		@media (min-width:739px){
+			.media-text{width:560px;}
+		}
+
+
+		@media (max-width:740px) {
+		    
+		    .nav-bar{padding-bottom: 20px;}
+
+		    .media-div{max-width:590px !important;}
+
+		  	.media-text {margin-right:25px;}
+
+		  	.media-image-div {margin-bottom:15px;}
+
+		  	.media-body{max-height:110px; overflow: hidden;}
+
 		}
 
 	</style>
