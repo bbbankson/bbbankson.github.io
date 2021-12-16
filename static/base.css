@@ -1,14 +1,14 @@
 body, .header {
 	font-family: 'Raleway', sans-serif;
-	line-height:2em;
+	line-height:1.5em;
 	background-color:#F3F3F3;
 	color: #3F3532;
+	min-width:350px;
 }
 
 .nav-bar{
-	margin-top:10px;
-	padding-top:10px;
-	height:160px;
+	padding-top:20px;
+	height:100px;
 }
 
 .header {
@@ -17,13 +17,11 @@ body, .header {
 	font-size: 3em;
 }
 
-.nav-links{
-	margin-top:5px;
-}
 
 .nav-link{
-	font-size:1.25em;
-	margin:10px;
+	font-size:16px;
+	margin-left:10px;
+	margin-right:10px;
 }
 
 a {
