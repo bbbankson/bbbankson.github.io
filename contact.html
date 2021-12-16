@@ -12,13 +12,66 @@
 		<link href="../static/base.css" rel="stylesheet" type="text/css"> <!-- base style -->
 	</head>
 
+	<style>
+
+		body{
+			line-height:1.6em !important;
+		}
+
+		a.contact-link {
+			color:#C46D55;
+		}
+
+		.wrapper{
+			padding-bottom:10px;
+		}
+
+		.left-col {
+			display:inline-block; 
+			vertical-align:top;  
+			width:250px;
+			margin-top:15px;
+		}
+
+		.contact-image {
+			width:250px;
+			height:200px;
+			border:1px solid#3F3532;
+		}
+
+		.right-col{
+			display:inline-block; 
+			vertical-align:top;
+			width:560px;
+			text-align: left;
+			margin-left:25px;
+			margin-top:0px;
+			font-size:16px;
+		}
+
+		#contact-about{
+			text-align: left;
+		}
+
+		#about-text{
+			display:inline-block; 
+			vertical-align:top; 
+			width:50%; 
+			min-width:300px;
+			max-width:550px;
+			text-align: left;
+			margin-left:25px;
+		}
+
+	</style>
+
 	<body>
 
 		<div align="center">
 			<div id="container">
 
 				<!-- Nav bar -->
-				<div class="nav-bar" >
+				<div class="nav-bar">
 					<div class="header">brett <b>bankson</b></div>
 					<div class="nav-links">
 						<a class="nav-link" href="/about">ABOUT</a>
@@ -29,9 +82,56 @@
 					</div>
 				</div> <!-- end of nav bar-->
 
-				<div style="margin:auto;font-weight:bolder;color:#C46D55;padding-top:200px">
-					contact coming soon ;)
-				</div>
+				<!-- main content -->
+				<div class='wrapper'>
+
+					<!-- Left column -->
+				    <div class="left-col">
+
+				    	<!-- Div with picture -->
+				    	<div id="contact-image-div">
+				    		<img class="contact-image" src="../static/media/pittsburgh-post-gazette.png">
+				    	</div>
+
+				    	<!-- About the form text -->
+				    	<div id="contact-about">
+				    		<p>
+				    			Interested in having your event catered or hiring me as a private chef?
+				    		</p>
+				    		<p>
+				    			Email: <a href="mailto:brett.bbankson@gmail.com" class="contact-link" target="_blank" rel="noopener noreferrer">brett.bbankson@gmail.com</a>
+				    		</p>
+				    		<p>
+				    			Instagram: <a class="contact-link" href="https://instagram.com/bbbankson" target="_blank" rel="noopener noreferrer">@bbbankson</a>
+				    		</p>
+				    		<p>
+				    			Twitter: <a class="contact-link" href="https://twitter.com/brettbbankson" target="_blank" rel="noopener noreferrer">@brettbbankson</a>
+				    		</p>
+				    	</div>
+				    </div>
+
+				    <!-- Right col -->
+				    <!-- <div class="right-col">
+			    		<form>
+			    			<div>
+			    				<label for="fname">Your name</label>
+								<input type="text" id="fname" name="fname">
+							</div>
+							<div>
+			    				<label for="fname">Email address</label>
+								<input type="text" id="fname" name="fname">
+							</div>
+							<div>
+			    				<label for="fname">Phone number</label>
+								<input type="text" id="fname" name="fname">
+							</div>
+							<div>
+			    				<label for="fname">Message</label>
+								<input type="text" id="fname" name="fname">
+							</div>
+			    		</form>
+				    </div> -->
+				</div> <!-- End of contact info div here -->				
 
 			</div>  
 		</div> 
