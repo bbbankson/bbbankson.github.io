@@ -10,7 +10,7 @@
 
 		.header, a, .emphasis-span{font-family: 'Raleway', sans-serif !important;}
 
-		.header{font-size:48px;}
+		.header{font-size:48px !important;}
 
 		.nav-link{
 			font-size:16px;
@@ -39,7 +39,7 @@
 		  and (max-width: 480px)
 		  and (resolution: 150dpi) {
 
-		  	.header{font-size:24px;}
+		  	.header{font-size:24px !important;}
 
 		  	body {
 		  		font-size: 3em !important;
