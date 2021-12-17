@@ -1,21 +1,13 @@
-body, .header {
-			font-family: 'Raleway', sans-serif;
+		body, .header {
 			line-height:1.5em;
 			background-color:#F3F3F3;
 			color: #3F3532;
 			min-width:350px;
 		}
 
-		.nav-bar{
-			padding-top:20px;
-			margin-bottom:20px;
-		}
+		body{font-family: 'Nunito', sans-serif;}
 
-		.header {
-			display: table-cell;
-			vertical-align: middle;
-			font-size: 3em;
-		}
+		.header, a, .emphasis-span{font-family: 'Raleway', sans-serif !important;}
 
 
 		.nav-link{
