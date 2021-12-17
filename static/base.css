@@ -51,4 +51,6 @@
 		  		line-height:4em !important;
 		  	}
 
+		  	a.selected{display:none;}
+
 		}
