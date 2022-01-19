@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  	<head>
+    	<title>Brett Baribault Bankson</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<!-- Raleway and Nunito font -->
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
+		<!-- Stylesheet -->
+		<link href="../static/base.css" rel="stylesheet" type="text/css"> <!-- base style -->
+	</head>
+
+	<script>
+		// Open the Modal
+		function openModal() {
+		  document.getElementById("myModal").style.display = "block";
+		}
+
+		// Close the Modal
+		function closeModal() {
+		  document.getElementById("myModal").style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+	</script>
+
+	<style>
+
+		.catering-info-image-div {
+			display:inline-block; 
+			vertical-align:top;  
+			width:250px;
+			height:200px;
+			margin-top:15px;
+		}
+
+		.catering-info-image {
+			width:250px;
+			height:190px;
+			border:1px solid#3F3532;
+		}
+
+		.catering-info-text{
+			display:inline-block; 
+			vertical-align:top;
+			max-width:560px;
+			text-align: left;
+			margin-left:25px;
+			margin-top:0px;
+			line-height:1.6em !important;
+			font-size:15px;
+		}
+
+		.past-event-div {
+			display:inline-block; 
+			vertical-align:top; 
+			margin: 0px 15px 0px 15px;
+			width:200px;
+		}
+
+		.past-events-header{
+			margin-top:20px;
+		}
+
+		.header-span {
+			font-family: 'Raleway', sans-serif !important;
+			color:#C46D55;
+			text-transform:uppercase;
+			border-bottom: 2px solid #C46D55;
+			padding-bottom:3px;
+			font-size:18px;
+			font-weight:bolder;
+		}
+
+		.past-event-image{
+			display:inline-block; 
+			vertical-align:top; 
+			text-align: left;
+			border:1px solid#3F3532;
+			width:185px !important;
+			height:185px !important;
+		}
+
+		.past-event-title{
+			text-transform:uppercase;
+			font-weight:bolder;
+			margin-top:10px;
+			font-size:15px;
+			line-height:1.5em !important;
+		}
+
+		.past-event-date{
+			text-transform:lowercase;
+			color:#9D9796;
+			line-height:1.25em !important;
+			font-size:14px;
+			margin-bottom:20px;
+		}
+
+		.catering-header{
+			font-family: 'Raleway', sans-serif !important;
+			color:#C46D55;
+			font-weight:bolder;
+			text-transform:uppercase;
+			margin-right:10px;
+			font-size:18px;
+		}
+
+		@media only screen 
+		  and (max-width: 855px) {
+		    
+		  	.nav-bar{
+		  		margin-bottom:5px !important;
+		  	}
+
+		}
+
+		@media (max-width:1030px){
+			.past-events-row{
+				max-width:600px !important;
+			}
+
+			.past-event-div{
+				margin-bottom:5px !important;
+			}
+		}
+
+	</style>
+
+	<body>
+
+		<div align="center">
+			<div id="container">
+
+				<!-- Nav bar -->
+				<div class="nav-bar" >
+					<div class="header">brett <b>bankson</b></div>
+					<div class="nav-links">
+						<a class="nav-link" href="/about">ABOUT</a>
+						<a class="nav-link selected" href="/catering">CATERING</a>
+						<a class="nav-link" href="/recipes">RECIPES</a>
+						<a class="nav-link" href="/media">MEDIA</a>
+						<a class="nav-link" href="/contact">CONTACT</a>
+					</div>
+				</div> <!-- end of nav bar-->
+
+				<!-- TOP SECTION OF CATERING -->
+				<div class='catering-info'>
+
+					<!-- Image in left col -->
+				    <div class="catering-info-image-div">
+				    	<div>
+				    		<img class="catering-info-image" src="../static/catering/cover-image-top.png">
+				    	</div>
+				    </div>
+
+				    <!-- Text in right col -->
+				    <div class="catering-info-text">
+			    		<p>
+			    			<span class="catering-header">catering & private chef &mdash;</span> As a self-taught cook, my professional cooking experience has been broad and eclectic — I love to say yes to food! I’ve done tasting menus for two people and coursed dinners for 14, but also day-to-day meal services, workplace receptions for 60, and wedding meals for 180. I have a deep interest in wine (with particular knowledge of low intervention producers from the West Coast, New England, and the Loire Valley), amaro, and low/no-proof beverages, and enjoy curating beverage selections for any kind of event. I’m currently located in Seattle but love to travel around the US for events! 
+						</p>
+				    </div>
+				</div> <!-- End of catering info div here -->
+
+				<!-- Start of Past Events & More section -->
+				<div class='past-events-and-more' style="margin-bottom:50px">
+
+					<div class="past-events-header">
+						<span class="header-span">past events & more</span>
+					</div>
+
+					<!-- copy div for past-events-row to make a row of 4 -->
+				    <div class="past-events-row" style="margin-top:35px !important">
+				    	<div class="past-event-div">
+				    		<img class="past-event-image" src="../static/catering/tg2020-cover.jpeg">
+				    		<div class="past-event-title">Thanksgiving Tasting</div>
+				    		<div class="past-event-date">November 2020 in ukiah, CA</div>
+				    	</div>
+				    	<div class="past-event-div">
+				    		<img class="past-event-image" src="../static/catering/claire-cover.jpeg">
+				    		<div class="past-event-title">Anniversary Tasting</div>
+				    		<div class="past-event-date">December 2020 in seattle, WA</div>
+				    	</div>
+				    	<div class="past-event-div">
+				    		<img class="past-event-image" src="../static/catering/fet-fisk-cover.jpeg">
+				    		<div class="past-event-title">Stage at Fet Fisk</div>
+				    		<div class="past-event-date">October 2021 in Pittsburgh, PA</div>
+				    	</div>
+				    	<div class="past-event-div">
+				    		<img class="past-event-image" src="../static/catering/dana-cover.jpeg">
+				    		<div class="past-event-title">Private Chef & Catering</div>
+				    		<div class="past-event-date">October 2021 in Mars, PA</div>
+				    	</div>
+				    </div> <!-- end of past events row of 4 -->
+
+				    <!-- copy below to make a row of 4 -->
+				    <div class="past-events-row">
+				    	<div class="past-event-div">
+				    		<img class="past-event-image" src="../static/catering/spring-1.jpeg">
+				    		<div class="past-event-title">Spring</div>
+				    		<div class="past-event-date">misc. favourites</div>
+				    	</div>
+				    	<div class="past-event-div">
+				    		<img class="past-event-image" src="../static/catering/summer-1.jpeg">
+				    		<div class="past-event-title">Summer</div>
+				    		<div class="past-event-date">misc. favourites</div>
+				    	</div>
+				    	<div class="past-event-div">
+				    		<img class="past-event-image" src="../static/catering/autumn-1.jpeg">
+				    		<div class="past-event-title">Autumn</div>
+				    		<div class="past-event-date">misc. favourites</div>
+				    	</div>
+				    	<div class="past-event-div">
+				    		<img class="past-event-image" src="../static/catering/winter-1.jpeg">
+				    		<div class="past-event-title">Winter</div>
+				    		<div class="past-event-date">misc. favourites</div>
+				    	</div>
+				    </div> <!-- end of past events row of 4 -->
+
+				</div> <!-- End of PAST EVENTS here -->
+
+			</div>  
+		</div> 
+
+	</body>
+
+</html>

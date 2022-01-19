@@ -14,6 +14,7 @@
 		<link href="../static/base.css" rel="stylesheet" type="text/css"> <!-- base style -->
 	</head>
 
+
 	<style>
 
 		.catering-info-image-div {
@@ -153,61 +154,401 @@
 				</div> <!-- End of catering info div here -->
 
 				<!-- Start of Past Events & More section -->
+				<style>
+					.row > .column {
+					  padding: 0 8px;
+					}
+
+					.row:after {
+					  content: "";
+					  display: table;
+					  clear: both;
+					}
+
+					/* Create four equal columns that floats next to eachother */
+					.column {
+					  float: left;
+					  width: 25%;
+					}
+
+					/* The Modal (background) */
+					.modal {
+					  display: none;
+					  position: fixed;
+					  z-index: 1;
+					  padding-top: 100px;
+					  left: 0;
+					  top: 0;
+					  width: 100%;
+					  height: 100%;
+					  overflow: auto;
+					  background: rgba(100,100,100,0.5);
+					}
+
+					/* Modal Content */
+					.modal-content {
+					  position: relative;
+					  background-color: #F3F3F3;
+					  margin: auto;
+					  padding: 0;
+					  width: 90%;
+					  max-width: 1200px;
+					}
+
+					/* The Close Button */
+					.close {
+					  color: white;
+					  position: absolute;
+					  top: 10px;
+					  right: 25px;
+					  font-size: 35px;
+					  font-weight: bold;
+					}
+
+					.close:hover,
+					.close:focus {
+					  color: #999;
+					  text-decoration: none;
+					  cursor: pointer;
+					}
+
+					/* Hide the slides by default */
+					.mySlides {
+					  display: none;
+					  padding-top:20px;
+					}
+
+					/* Next & previous buttons */
+					.prev,
+					.next {
+					  cursor: pointer;
+					  position: absolute;
+					  top: 50%;
+					  width: auto;
+					  padding: 16px;
+					  margin-top: -50px;
+					  color: #BF8676;
+					  font-weight: bold;
+					  font-size: 20px;
+					  transition: 0.6s ease;
+					  border-radius: 0 3px 3px 0;
+					  user-select: none;
+					  -webkit-user-select: none;
+					}
+
+					/* Position the "prev button" to the right */
+					.prev {
+					  left: 0;
+					  border-radius: 3px 0 0 3px;
+					}
+
+					/* Position the "next button" to the right */
+					.next {
+					  right: 0;
+					  border-radius: 3px 0 0 3px;
+					}
+
+					/* On hover, add a black background color with a little bit see-through */
+					.prev:hover,
+					.next:hover {
+					  color: #C46D55;
+					}
+
+					/* Caption text */
+					.caption-container {
+					  text-align: center;
+					  background-color: #F3F3F3;
+					  padding: 2px 16px;
+					}
+
+					img.demo {
+					  opacity: 0.6;
+					  max-width:80px;
+					}
+
+					.active,
+					.demo:hover {
+					  opacity: 1;
+					}
+
+					img.hover-shadow {
+					  transition: 0.3s;
+					}
+
+					.hover-shadow:hover {
+					  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+					}
+
+					.lightbox-slide{
+				  		background-color:transparent !important;
+				  		max-width:300px;
+				  		width:100%
+				  	}
+
+				</style>
+
 				<div class='past-events-and-more' style="margin-bottom:50px">
 
 					<div class="past-events-header">
 						<span class="header-span">past events & more</span>
 					</div>
 
-					<!-- copy div for past-events-row to make a row of 4 -->
-				    <div class="past-events-row" style="margin-top:35px !important">
-				    	<div class="past-event-div">
-				    		<img class="past-event-image" src="../static/catering/tg2020-cover.jpeg">
-				    		<div class="past-event-title">Thanksgiving Tasting</div>
-				    		<div class="past-event-date">November 2020 in ukiah, CA</div>
-				    	</div>
-				    	<div class="past-event-div">
-				    		<img class="past-event-image" src="../static/catering/claire-cover.jpeg">
-				    		<div class="past-event-title">Anniversary Tasting</div>
-				    		<div class="past-event-date">December 2020 in seattle, WA</div>
-				    	</div>
-				    	<div class="past-event-div">
-				    		<img class="past-event-image" src="../static/catering/fet-fisk-cover.jpeg">
-				    		<div class="past-event-title">Stage at Fet Fisk</div>
-				    		<div class="past-event-date">October 2021 in Pittsburgh, PA</div>
-				    	</div>
-				    	<div class="past-event-div">
-				    		<img class="past-event-image" src="../static/catering/dana-cover.jpeg">
-				    		<div class="past-event-title">Private Chef & Catering</div>
-				    		<div class="past-event-date">October 2021 in Mars, PA</div>
-				    	</div>
-				    </div> <!-- end of past events row of 4 -->
+					<!-- Images used to open the lightbox -->
+					<div class="past-events-row" style="margin-top:20px">
+					  <div class="past-event-div">
+					    <img src="static/catering/TG2020/tg2020-cover.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow past-event-image">
+					    <div class="past-event-title">Thanksgiving Tasting</div>
+					  	<div class="past-event-date">November 2020 in ukiah, CA</div>
+					  </div>
 
-				    <!-- copy below to make a row of 4 -->
-				    <div class="past-events-row">
-				    	<div class="past-event-div">
-				    		<img class="past-event-image" src="../static/catering/spring-1.jpeg">
-				    		<div class="past-event-title">Spring</div>
-				    		<div class="past-event-date">misc. favourites</div>
-				    	</div>
-				    	<div class="past-event-div">
-				    		<img class="past-event-image" src="../static/catering/summer-1.jpeg">
-				    		<div class="past-event-title">Summer</div>
-				    		<div class="past-event-date">misc. favourites</div>
-				    	</div>
-				    	<div class="past-event-div">
-				    		<img class="past-event-image" src="../static/catering/autumn-1.jpeg">
-				    		<div class="past-event-title">Autumn</div>
-				    		<div class="past-event-date">misc. favourites</div>
-				    	</div>
-				    	<div class="past-event-div">
-				    		<img class="past-event-image" src="../static/catering/winter-1.jpeg">
-				    		<div class="past-event-title">Winter</div>
-				    		<div class="past-event-date">misc. favourites</div>
-				    	</div>
-				    </div> <!-- end of past events row of 4 -->
+					  <div class="past-event-div">
+					    <img src="static/catering/anniversary/claire-cover.jpeg" onclick="openModal();currentSlide(11)" class="hover-shadow past-event-image">
+					    <div class="past-event-title">Anniversary Tasting</div>
+					  	<div class="past-event-date">December 2020 in seattle, WA</div>
+					  </div>
 
-				</div> <!-- End of PAST EVENTS here -->
+					  <div class="past-event-div">
+					    <img src="static/catering/FetFisk2021/fet-fisk-cover.jpeg" onclick="openModal();currentSlide(21)" class="hover-shadow past-event-image">
+					    <div class="past-event-title">Stage at Fet Fisk</div>
+					  	<div class="past-event-date">October 2021 in Pittsburgh, PA</div>
+					  </div>
+
+					  <div class="past-event-div">
+					    <img src="static/catering/Dana2021/DanaCover.jpeg" onclick="openModal();currentSlide(28)" class="hover-shadow past-event-image">
+					    <div class="past-event-title">Private Chef & Catering</div>
+					  	<div class="past-event-date">October 2021 in Mars, PA</div>
+					  </div>
+					</div>
+
+					<!-- The Modal/Lightbox -->
+					<div id="myModal" class="modal">
+					  <span class="close cursor" onclick="closeModal()">&times;</span>
+					  <div class="modal-content">
+
+					  	<!-- IMAGES SCROLLING IN LIGHTBOX -->
+					  	<!-- Images 1 through 10 (Thanksgiving) -->
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/TG2020/TG1.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/TG2020/TG2.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/TG2020/TG3.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/TG2020/TG4.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/TG2020/TG5.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/TG2020/TG6.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/TG2020/TG7.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/TG2020/TG8.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/TG2020/TG9.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/TG2020/TG10.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/anniversary/Ann1.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/anniversary/Ann2.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/anniversary/Ann3.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/anniversary/Ann4.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/anniversary/Ann5.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/anniversary/Ann6.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/anniversary/Ann7.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/anniversary/Ann8.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/anniversary/Ann9.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/anniversary/Ann10.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/FetFisk2021/FF1.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/FetFisk2021/FF2.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/FetFisk2021/FF3.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/FetFisk2021/FF4.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/FetFisk2021/FF5.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/FetFisk2021/FF6.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/FetFisk2021/FF7.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/Dana2021/DanaCover.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/Dana2021/Dana2.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/Dana2021/Dana3.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/Dana2021/Dana4.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/Dana2021/Dana5.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/Dana2021/Dana6.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/Dana2021/Dana7.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/Dana2021/Dana8.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/Dana2021/Dana9.jpeg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/Dana2021/Dana10.jpg">
+					    </div>
+
+					    <div class="mySlides">
+					      <img class = "lightbox-slide" src="static/catering/Dana2021/Dana11.jpeg">
+					    </div>
+
+					    <!-- Next/previous controls -->
+					    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					    <!-- Caption text -->
+					    <div class="caption-container">
+					      	<div class="past-event-title" id="caption-event-title"></div>
+					  		<div class="past-event-date" id="caption-event-date"></div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+
+				<script>
+					// Open the Modal
+					function openModal() {
+						document.body.style.filter = blur('2px');
+					  	document.getElementById("myModal").style.display = "block";
+					}
+
+					// Close the Modal
+					function closeModal() {
+					  document.getElementById("myModal").style.display = "none";
+					}
+
+					var slideIndex = 1;
+					showSlides(slideIndex);
+
+					// Next/previous controls
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+
+					// Thumbnail image controls
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+					  var i;
+					  var slides = document.getElementsByClassName("mySlides");
+
+					  if (n > slides.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+					    slides[i].style.display = "none";
+					  }
+
+					  slides[slideIndex-1].style.display = "block";
+
+					  // Decide caption text
+					  var captionText = document.getElementById("caption-event-title");
+					  var captionDate = document.getElementById("caption-event-date")
+					  
+					  if (n < 11){
+					  	captionText.innerHTML = "thanksgiving tasting menu";
+					  	captionDate.innerHTML = "november 2020 in ukiah, CA";
+					  } else if (n < 21){
+					  	captionText.innerHTML = "anniversary tasting menu";
+					  	captionDate.innerHTML = "december 2020 in seattle, WA";
+					  } else if (n < 28){
+					  	captionText.innerHTML = "stage at fet fisk";
+					  	captionDate.innerHTML = "october 2021 in pittsburgh, PA";
+					  } else if (n < 40){
+					  	captionText.innerHTML = "private chef & catering";
+					  	captionDate.innerHTML = "october 2021 in mars, PA";
+					  }
+					  
+					}
+				</script>
 
 			</div>  
 		</div> 
