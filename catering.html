@@ -326,19 +326,19 @@
 					  </div>
 
 					  <div class="past-event-div">
-					    <img src="static/catering/summer/summer-1.jpeg" onclick="openModal();currentSlide(44)" class="hover-shadow past-event-image">
+					    <img src="static/catering/summer/summer-1.jpeg" onclick="openModal();currentSlide(43)" class="hover-shadow past-event-image">
 					    <div class="past-event-title">summer</div>
 					  	<div class="past-event-date">misc. favourites</div>
 					  </div>
 
 					  <div class="past-event-div">
-					    <img src="static/catering/autumn/autumn-1.jpeg" onclick="openModal();currentSlide(48)" class="hover-shadow past-event-image">
+					    <img src="static/catering/autumn/autumn-1.jpeg" onclick="openModal();currentSlide(47)" class="hover-shadow past-event-image">
 					    <div class="past-event-title">autumn</div>
 					  	<div class="past-event-date">misc. favourites</div>
 					  </div>
 
 					  <div class="past-event-div">
-					    <img src="static/catering/winter/winter-1.jpeg" onclick="openModal();currentSlide(52)" class="hover-shadow past-event-image">
+					    <img src="static/catering/winter/winter-1.jpeg" onclick="openModal();currentSlide(50)" class="hover-shadow past-event-image">
 					    <div class="past-event-title">winter</div>
 					  	<div class="past-event-date">misc. favourites</div>
 					  </div>
@@ -516,10 +516,6 @@
 					    </div>
 
 					    <div class="mySlides">
-					      <img class = "lightbox-slide" src="static/catering/spring/spring-4.jpeg">
-					    </div>
-
-					    <div class="mySlides">
 					      <img class = "lightbox-slide" src="static/catering/summer/summer-1.jpeg">
 					    </div>
 
@@ -545,10 +541,6 @@
 
 					    <div class="mySlides">
 					      <img class = "lightbox-slide" src="static/catering/autumn/autumn-3.jpeg">
-					    </div>
-
-					    <div class="mySlides">
-					      <img class = "lightbox-slide" src="static/catering/autumn/autumn-4.jpeg">
 					    </div>
 
 					    <div class="mySlides">
@@ -633,8 +625,19 @@
 					  } else if (n < 40){
 					  	captionText.innerHTML = "private chef & catering";
 					  	captionDate.innerHTML = "october 2021 in mars, PA";
+					  } else if (n < 43){
+					  	captionText.innerHTML = "spring";
+					  	captionDate.innerHTML = "misc. favourites";
+					  } else if (n < 47){
+					  	captionText.innerHTML = "summer";
+					  	captionDate.innerHTML = "misc. favourites";
+					  } else if (n < 50){
+					  	captionText.innerHTML = "autumn";
+					  	captionDate.innerHTML = "misc. favourites";
+					  } else {
+					  	captionText.innerHTML = "winter";
+					  	captionDate.innerHTML = "misc. favourites";
 					  }
-					  
 					}
 				</script>
 
