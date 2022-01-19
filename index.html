@@ -48,19 +48,24 @@
 		}
 
 		.title{
-			font-size: 16vw !important;
-			line-height: 16vw;
+			font-size: 100px !important;
 			text-transform: uppercase;
 			cursor: default !important;
 			letter-spacing: 0.15em;
 			filter: drop-shadow(3px 3px 4px #2D3748);
-			margin-bottom:20px;
 		}
 
 		a {
-			font-size: 8vw !important;
+			font-size: 48 !important;
 			line-height: 8vw;
 		}
+
+		@media only screen 
+		  and (max-width: 855px) {
+		    
+		  	.title{font-size:66px !important;}
+		  	a{font-size:32px !important;}
+		  }
 
 
 	</style>
@@ -68,7 +73,7 @@
 	<body>
 		<div class="container">
 			<div class="element">
-				<div class="title_div">
+				<div class="title_div" style="margin-bottom:20px;">
 					<span class="title">Brett Bankson</span>
 				</div>
 				<div class="main_links">
